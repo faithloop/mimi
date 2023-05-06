@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 4</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="coursera search.css">
+
+    <style>
+
+
+.dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .hmm {
+        height: 30px;
+        background-color: blue;
+        width: 40px;
+        margin-left: -7px;
+        color: blue;
+    }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+      }
+      .dropbtn {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        height: 45px;
+      }
+      .about1:hover{
+        color: #014c8c;
+        text-decoration: underline;
+      }
+      #place{
+        background: url(../snap.PNG);
+        background-size: cover;
+      }
+      #nav2{
+        display: none !important;
+      }
+      .about:hover{
+        text-decoration: underline;
+        color: #2a73cc;
+        cursor: progress;
+      }
+      .browse:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      @media (max-width:760px) {
+          #nav2{
+            display: block !important;
+            display: flex !important;
+          }
+          #nav1{
+            display: none !important;
+          }
+      }
+        @media (max-width:760px) {
+         
+            #flex{
+                overflow-x: scroll;
+            }
+            #para{
+                font-size: 13px !important;
+                font-weight: 600 !important;
+                width: 90%;
+                text-align: center;
+            }
+            #filter{
+                display: none !important;
+            }
+            .total{
+                font-size: 10px !important;
+            }
+            .text-n{
+                font-size: 10px;
+            }
+            .al{
+                width: 80%;
+                padding-left: 0;
+            }
+            .s-flex{
+                flex-direction: column;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="d-flex justify-content-between container pt-2" id="nav2">
+        <div>
+          <i class="fa fa-bars"></i>
+        </div>
+        <div>
+          <span style="color: blue; font-weight: bold; font-size: 27px;">coursera</span>
+        </div>
+        <div>
+          <i class="fa fa-search"></i>
+        </div>
+      </nav>
+  
+      <main class="navbar" id="nav1">
+        <div class="d-flex">
+          <div>
+            <span style="font-size: 30px; font-weight: bold; color: blue" class="mx-4"
+              >coursera</span>
+          </div>
+          <div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Explore <i class="fa fa-angle-down"></i>
+              </button>
+              <div>
+                <div
+                  class="dropdown-content"
+                  style="width: 300px; height: 600px; overflow-y: scroll"
+                >
+                  <div>
+                    <div>
+                      <h5 style="padding-left: 15px">Goals</h5>
+                      <a href="#"
+                        >Take a free course
+                        <i class="fa fa-chevron-right pl-5 ml-5"></i
+                      ></a>
+                      <a href="#"
+                        >Earn a Degree
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 120px"
+                        ></i>
+                      </a>
+                      <a href="#"
+                        >Earn Certificate
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 110px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Launch or advance your career
+                        <i class="fa fa-chevron-right"></i
+                      ></a>
+                    </div>
+  
+                    <div>
+                      <h5 style="padding-left: 15px">Subjects</h5>
+                      <a href="#"
+                        >Data Science
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 120px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Business
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 150px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Computer Science
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 80px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Information Technology
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 35px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Language Learning
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 70px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Health
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 160px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Personal Development
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 50px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Physical Science and Engineering
+                        <i class="fa fa-chevron-right"></i
+                      ></a>
+                      <a href="#"
+                        >Social Sciences
+                        <i class="fa fa-chevron-right pl-5 ml-5"></i
+                      ></a>
+                      <a href="#"
+                        >Arts and Humanities
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 60px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Math and Logic
+                        <i class="fa fa-chevron-right pl-5 ml-5"></i
+                      ></a>
+                      <button
+                        style="
+                          border: 1px solid blue;
+                          background-color: transparent;
+                          width: 200px;
+                          color: blue;
+                          margin-left: 20px;
+                        "
+                      >
+                        Browse all Subjects
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="mx-4" >
+              <input type="text" placeholder="vue" style="width: 80%;" >
+              <button class="hmm" style="border: none;">
+                <i class="fa fa-search text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div >
+            <span class="mr-5 ml-5" >For Enterprise </span>
+            <span class="mr-5" style="margin-left: 30px;" > For students</span>
+          </div>
+        </div>
+        <div class="mr-5 ml-5" >
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            class="loop"
+          >
+            Log in
+          </a>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body container">
+                  <div class="container">
+                    <h3
+                      style="
+                        font-weight: 400;
+                        font-size: 35px;
+                        text-align: center;
+                      "
+                    >
+                      Welcome back
+                    </h3>
+                    <div>
+                      <label style="font-weight: 700; font-size: 13px"
+                        >EMAIL</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="name@email.com"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <div class="mt-3">
+                      <label style="font-weight: 700; font-size: 13px"
+                        >PASSWORD</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="Enter your password"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <a href="#" style="text-decoration: none">Forget password?</a
+                    ><br /><br /><br />
+                    <div>
+                      <button
+                        style="
+                          background-color: rgb(0, 86, 210);
+                          color: white;
+                          font-weight: 400;
+                          border: none;
+                          border-radius: 5px;
+                          width: 90%;
+                          height: 50px;
+                        "
+                      >
+                        Login
+                      </button>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                      <hr width="40%" />
+                      <span style="padding-left: 15px; padding-right: 15px"
+                        >or</span
+                      >
+                      <hr width="40%" />
+                    </div>
+                    <div class="mt-2">
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img src="../loe1.PNG" /> Continue with Google</button
+                      ><br /><br />
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img src="../loe2.PNG" />Continue with Facebook</button
+                      ><br /><br />
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img
+                          src="../loe3.PNG"
+                          style="padding-left: 100px"
+                        />Continue with Apple
+                      </button>
+                    </div>
+                    <div style="text-align: center">
+                      <span>New to Coursera?</span>
+                      <a href="#" style="text-decoration: none">Sign up</a>
+                    </div>
+                    <hr />
+                    <div style="text-align: center">
+                      <a href="#" style="text-decoration: none"
+                        >Log in with your organization</a
+                      >
+                    </div>
+                    <br />
+                    <div style="text-align: center">
+                      <span>Having trouble logging in?</span>
+                      <a href="#" style="color: black">Learner help center</a>
+                    </div>
+                    <br />
+                    <div style="text-align: center">
+                      <span
+                        >This site is protected by reCAPTCHA Enterprise and <br />
+                        the Google</span
+                      >
+                      <a href="#" style="color: black">Privacy Policy.</a>
+                      <span>and</span>
+                      <a href="#" style="color: black">Terms and Service</a>
+                      <span>apply.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Join for Free
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body container">
+                  <div class="container">
+                    <h3
+                      style="
+                        font-weight: 400;
+                        font-size: 35px;
+                        text-align: center;
+                      "
+                    >
+                      Sign up
+                    </h3>
+                    <div>
+                      <label style="font-weight: 700; font-size: 13px"
+                        >FULL NAME</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="Enter your name"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <div class="mt-3">
+                      <label style="font-weight: 700; font-size: 13px"
+                        >EMAIL</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="name@email.com"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <div class="mt-3">
+                      <label style="font-weight: 700; font-size: 13px"
+                        >PASSWORD</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="create your password"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <span>Between 8 and 72 characters</span><br /><br />
+                    <div>
+                      <button
+                        style="
+                          background-color: rgb(0, 86, 210);
+                          color: white;
+                          font-weight: 400;
+                          border: none;
+                          border-radius: 5px;
+                          width: 90%;
+                          height: 50px;
+                        "
+                      >
+                        Join for Free
+                      </button>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                      <hr width="40%" />
+                      <span style="padding-left: 15px; padding-right: 15px"
+                        >or</span
+                      >
+                      <hr width="40%" />
+                    </div>
+                    <div class="mt-2">
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img src="../loe1.PNG" style="padding-right: 135px" />
+                        Continue with Google</button
+                      ><br /><br />
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img
+                          src="../loe2.PNG"
+                          style="padding-right: 135px"
+                        />Continue with Facebook</button
+                      ><br /><br />
+                    </div>
+                    <div style="text-align: center">
+                      <span>New to Coursera?</span>
+                      <a href="#" style="text-decoration: none">Sign up</a>
+                    </div>
+                    <hr />
+                    <div style="text-align: center">
+                      <a href="#" style="text-decoration: none"
+                        >Log in with your organization</a
+                      >
+                    </div>
+                    <br />
+                    <div style="text-align: center; font-size: 12px">
+                      <span>I agree Coursera's</span>
+                      <a href="#" style="color: black">Terms of use </a>
+                      <span>and</span>
+                      <a href="#" style="color: black">Privacy Notice</a><br />
+                      <span>Having trouble logging in?</span>
+                      <a href="#" style="color: black">Learner help center</a>
+                    </div>
+                    <br />
+                    <div style="text-align: center; font-size: 12px">
+                      <span
+                        >This site is protected by reCAPTCHA Enterprise and <br />
+                        the Google</span
+                      >
+                      <a href="#" style="color: black">Privacy Policy.</a>
+                      <span>and</span>
+                      <a href="#" style="color: black">Terms and Service</a>
+                      <span>apply.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <main class="stretch d-flex" id="flex">
+        <div class="all">
+            <a href="#" style="text-decoration: none; " class="text-n"><strong>All</strong></a>
+        </div>
+        <div class="guided">
+            <a href="#" style="text-decoration: none; color: black;" class="text-n"><strong>Guided Projects</strong></a>
+        </div>
+        <div class="guided">
+            <a href="#" style="text-decoration: none; color: black;" class="text-n"><strong>Degrees & Certificates</strong></a>
+        </div>
+    </main>
+
+
+    <main class="container-fluid mt-5" style="background-color: rgb(245,245,245); margin-bottom: 60px;">
+             <main style=" padding-top: 30px;">
+
+                     <h6 class="container-fluid total">Showing "34" total values for "vue"</h6>
+                     <small id="filter" class="container">Filter by</small>
+                
+
+
+
+                        <!-- dropdown -->
+
+                    <div class="d-flex justify-content-between" style="padding-top: 10px; padding-bottom: 10px;" id="filter">
+
+                          <div class="dropdown">
+                            <button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Language
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">French <span style="padding-left: 90px;">(17)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Spanish <span style="padding-left: 85px;">(16)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">English <span style="padding-left: 85px;">(14)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Russian <span style="padding-left: 85px;">(6)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">German <span style="padding-left: 90px;">(5)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Vietnamese <span style="padding-left: 60px;">(5)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Arabic <span style="padding-left: 90px;">(4)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Italian <span style="padding-left: 80px;">(3)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Portugese <span style="padding-left: 68px;">(2)</span></a>
+                             
+                              <a class="dropdown-item d-flex" href="#"><span style="color: blue;">Clear</span> <span style="color: blue; padding-left: 80px;">Show All</span></a>
+                              
+                            </div>
+                          </div>
+
+                          <div class="dropdown">
+                            <button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Level
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Beginner <span style="padding-left: 90px;">(11)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Intermediate <span style="padding-left: 85px;">(16)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Mixed <span style="padding-left: 85px;">(9)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Advanced <span style="padding-left: 85px;">(6)</span></a>
+                             
+                             
+                              <a class="dropdown-item d-flex" href="#"><span style="color: blue;">Clear</span> </a>
+                              
+                            </div>
+                          </div>
+
+                          <div class="dropdown">
+                            <button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Duration
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">1-3 months <span style="padding-left: 90px;">(17)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">1-4weeks <span style="padding-left: 85px;">(6)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">3+ months <span style="padding-left: 85px;">(14)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Less than 2hrs <span style="padding-left: 85px;">(5)</span></a>
+                              
+                              <a class="dropdown-item d-flex" href="#"><span style="color: blue;">Clear</span></a>
+                              
+                            </div>
+                          </div>
+
+                          <div class="dropdown">
+                            <button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Subject
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Physical Science <span style="padding-left: 90px;">(17)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Computer Science <span style="padding-left: 85px;">(16)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Social Siences <span style="padding-left: 85px;">(14)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Business <span style="padding-left: 85px;">(6)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Data Science <span style="padding-left: 90px;">(5)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Health <span style="padding-left: 60px;">(5)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Information Technology <span style="padding-left: 90px;">(4)</span></a>
+                            
+                              <a class="dropdown-item d-flex" href="#"><span style="color: blue;">Clear</span></a>
+                              
+                            </div>
+                          </div>
+
+                          <div class="dropdown">
+                            <button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Skills
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Communication <span style="padding-left: 90px;">(17)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Leadership <span style="padding-left: 85px;">(16)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Management <span style="padding-left: 85px;">(14)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Business psychology <span style="padding-left: 85px;">(6)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Computer programming <span style="padding-left: 90px;">(5)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Finance <span style="padding-left: 60px;">(5)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Marketing <span style="padding-left: 90px;">(4)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Sales <span style="padding-left: 80px;">(3)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">software Engineering <span style="padding-left: 68px;">(2)</span></a>
+                             
+                              <a class="dropdown-item d-flex" href="#"><span style="color: blue;">Clear</span></a>
+                              
+                            </div>
+                          </div>
+
+                          <div class="dropdown">
+                            <button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Partners
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Microsoft<span style="padding-left: 90px;">(17)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Google <span style="padding-left: 85px;">(16)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Auto Desk <span style="padding-left: 85px;">(14)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Essec Business School <span style="padding-left: 85px;">(6)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Coursera Project Network <span style="padding-left: 90px;">(5)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">hubstaff <span style="padding-left: 60px;">(5)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Sturtern <span style="padding-left: 90px;">(4)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Havard University <span style="padding-left: 80px;">(3)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Stocklom University <span style="padding-left: 68px;">(2)</span></a>
+                             
+                              <a class="dropdown-item d-flex" href="#"><span style="color: blue;">Clear</span> </a>
+                              
+                            </div>
+                          </div>
+
+                          <div class="dropdown" style="margin-right: 80px;">
+                            <button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Leading Products
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Guided Projects <span style="padding-left: 90px;">(17)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Courses<span style="padding-left: 85px;">(16)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Specializations <span style="padding-left: 85px;">(14)</span></a>
+                              <a class="dropdown-item" href="#"><input type="checkbox" style="margin-right: 10px;">Proffesional Certificate<span style="padding-left: 85px;">(6)</span></a>
+                             
+                             
+                              <a class="dropdown-item d-flex" href="#"><span style="color: blue;">Clear</span></a>
+                              
+                            </div>
+                          </div>
+                </div>        
+
+            </main>      
+    </main>
+
+
+                                                        <!-- body.. -->
+
+        <main class="container">
+            <main class=" course">
+                <div class="row w-100">
+                    <div class="col-sm-2">
+                        <img src="coursepic.jpg" alt="">
+                    </div>
+                    <div class="col-sm-10 " style="padding-left: 30px;">
+                        <h4 style="font-size: 20px;" id="para">Alimentaciaon y dietetica para una vuelta al mundo a vela</h4>
+                        <small class="total">Universitat de Barcelona</small><br>
+                        <button style="border: none; border-radius: 3px;" class="total">Course</button>
+                        <div>
+                        <img src="Ratings.jpg" alt=""> <small class="total">4.6(147)</small>|<small class="total">16k students</small>
+                        </div>
+                        <div>
+                            <img src="readings.jpg" alt=""><small class="total">Mixed</small>
+                        </div>
+                    </div>
+                </div>
+    
+            </main>
+        
+            <main class="container">
+                <main class=" course">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="coursepic1.jpg" alt="">
+                        </div>
+                        <div class="col-sm-10" style="padding-left: 30px;">
+                            <h4 style="font-size: 20px;" id="para">Estrategias para ganar. Meteorologia en la vuelta al mundo</h4>
+                            <small class="total">Universitat de Barcelona</small><br>
+                            <button style="border: none; border-radius: 3px;" class="total">Course</button>
+                            <div>
+                            <img src="Ratings.jpg" alt=""> <small class="total">4.6(147)</small>|<small class="total">16k students</small>
+                            </div>
+                            <div>
+                                <img src="readings.jpg" alt=""><small class="total">Intermediate</small>
+                            </div>
+                        </div>
+                    </div>
+            
+                 </main>
+            </main>
+    
+            <main class="container">
+                <main class=" course">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="coursepic2.jpg" alt="">
+                        </div>
+                        <div class="col-sm-10" style="padding-left: 30px;">
+                            <h4 style="font-size: 20px;" id="para">Write a University Index Web App with VueJS</h4>
+                            <small class="total">Coursera Project Network</small><small style="background-color: lightgreen; padding: 5px; margin-left: 10px; border-radius: 5px;">NEW</small><br>
+                            <button style="border: none; border-radius: 3px;" class="total">Guided Project</button>
+                            <div>
+                            <img src="Ratings.jpg" alt=""> <small class="total">4.6(147)</small>|<small class="total">16k students</small>
+                            </div>
+                            <div>
+                                <img src="readings.jpg" alt=""><small class="total">Intermediate</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                </main>
+            </main>
+    
+            <main class="container">
+                <main class=" course">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="coursepic3.jpg" alt="">
+                        </div>
+                        <div style="padding-left: 30px;" class="col-sm-10">
+                            <h4 style="font-size: 20px;" id="para">Crea una aplicacion wen con Vue.js</h4>
+                            <small class="total">Coursera Project Network</small><small style="background-color: lightgreen; padding: 5px; margin-left: 10px; border-radius: 5px;">NEW</small><br>
+                            <button style="border: none; border-radius: 3px;">Guided Project</button>
+                            <div>
+                            <img src="Ratings.jpg" alt=""> <small class="total">4.6(147)</small>|<small class="total">16k students</small>
+                            </div>
+                            <div>
+                                <img src="readings.jpg" alt=""><small class="total">Intermediate</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                </main>
+            </main>
+    
+            <main class="container">
+                <main class=" course">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="coursepic4.jpg" alt="">
+                        </div>
+                        <div style="padding-left: 30px;" class="col-sm-10">
+                            <h4 style="font-size: 20px;" id="para ">Empezando a trabajar con VueJS</h4>
+                            <small  class="total">Coursera Project Network</small><small style="background-color: lightgreen; padding: 5px; margin-left: 10px; border-radius: 5px;">NEW</small><br>
+                            <button style="border: none; border-radius: 3px;">Guided Project</button>
+                            <div>
+                            <img src="Ratings.jpg" alt=""> <small class="total">4.6(147)</small>|<small class="total">16k students</small>
+                            </div>
+                            <div>
+                                <img src="readings.jpg" alt=""><small class="total">Beginner</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                </main>
+            </main>
+    
+            <main class="container">
+                <main class=" course">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="coursepic5.jpg" alt="">
+                        </div>
+                        <div style="padding-left: 30px;" class="col-sm-10">
+                            <h4 style="font-size: 20px;" id="para">Create a Web Link Preview with VueJS Components</h4>
+                            <small class="total">Coursera Project Network</small><small style="background-color: lightgreen; padding: 5px; margin-left: 10px; border-radius: 5px;">NEW</small><br>
+                            <button style="border: none; border-radius: 3px;">Guided Project</button>
+                            <div>
+                            <img src="Ratings.jpg" alt=""> <small class="total">4.6(147)</small>|<small class="total">16k students</small>
+                            </div>
+                            <div>
+                                <img src="readings.jpg" alt=""><small class="total">Intermediate</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                </main>
+            </main>
+    
+            <main class="container">
+                <main class=" course">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="coursepic6.jpg" alt="">
+                        </div>
+                        <div style="padding-left: 30px;" class="col-sm-10">
+                            <h4 style="font-size: 20px;" id="para">Microsoft Azure Data Fundementals AZ-900 Exam Prep</h4>
+                            <small class="total">Microsoft</small><br>
+                            <button style="border: none; border-radius: 3px;">Specialization</button>
+                            <div>
+                            <img src="Ratings.jpg" alt=""> <small class="total">4.6(147)</small>|<small class="total">16k students</small>
+                            </div>
+                            <div>
+                                <img src="readings.jpg" alt=""><small class="total">Beginner</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                </main>
+            </main>
+    
+            <main class="container">
+                <main class="course">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="coursepic6.jpg" alt="">
+                        </div>
+                        <div style="padding-left: 30px;" class="col-sm-10">
+                            <h4 style="font-size: 20px;" id="para">Microsoft Azure Data Fundementals DP-300 Exam Prep</h4>
+                            <small class="total">Microsoft</small><br>
+                            <button style="border: none; border-radius: 3px;">Specialization</button>
+                            <div>
+                            <img src="Ratings.jpg" alt=""> <small class="total">4.6(147)</small>|<small class="total">16k students</small>
+                            </div>
+                            <div>
+                                <img src="readings.jpg" alt=""><small class="total">Beginner</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                </main>
+            </main>
+    
+            <main class="container">
+                <main class="course">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="coursepic7.jpg" alt="">
+                        </div>
+                        <div style="padding-left: 30px;" class="col-sm-10">
+                            <h4 style="font-size: 20px;" id="para">Programa Especializado en Gerencia de Proyectos Complejos</h4>
+                            <small class="total">Universitat de los Andes</small><br>
+                            <button style="border: none; border-radius: 3px;">Specialization</button>
+                            <div>
+                            <img src="Ratings.jpg" alt=""> <small class="total">4.6(147)</small>|<small class="total">16k students</small>
+                            </div>
+                            <div>
+                                <img src="readings.jpg" alt=""><small class="total">Intermediate</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                </main>
+            </main>
+    
+            <main class="container">
+                <main class=" course">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="coursepic8.jpg" alt="">
+                        </div>
+                        <div style="padding-left: 30px;" class="col-sm-10">
+                            <h4 style="font-size: 20px;" id="para">AutoDesk Certified Proffesional:Revit fot Architectural Design Exam Prep</h4>
+                            <small class="total">AutoDesk</small><br>
+                            <button style="border: none; border-radius: 3px;">Course</button>
+                            <div>
+                            <img src="Ratings.jpg" alt=""> <small class="total">4.6(147)</small>|<small class="total">16k students</small>
+                            </div>
+                            <div>
+                                <img src="readings.jpg" alt=""><small class="total">Advanced</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                </main>
+            </main>
+</main>
+<main class="container">
+    <h6>Searches related to "vue"</h6>
+</main>
+<main class="container">
+    
+    <div class="row">
+        <div class="col-sm-6">
+            <ul>
+                <li><a href="#" style="text-decoration: none; color: #00419e; font-size: 16px; font-weight: 600;">vue.js</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" style="text-decoration: none; color: #00419e; font-size: 16px; font-weight: 600;">empenzando a trabarjar con vuejs</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" style="text-decoration: none; color: #00419e; font-size: 16px; font-weight: 600;">crea una aplicacion web con vue.js</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" style="text-decoration: none; color: #00419e; font-size: 16px; font-weight: 600;">estrategias para ganar. meteorologia en la vuelta al mundo</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <ul>
+                <li><a href="#" style="text-decoration: none; color: #00419e; font-size: 16px; font-weight: 600;">vuejs</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" style="text-decoration: none; color: #00419e; font-size: 16px; font-weight: 600;">alimentaciaon y dietacica para una vuelta a mundo al vela</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" style="text-decoration: none; color: #00419e; font-size: 16px; font-weight: 600;">create a web link video with vuejs components</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" style="text-decoration: none; color: #00419e; font-size: 16px; font-weight: 600;">write a university index web app with vuejs</a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <span style="background-color: lightgray; height: 50px; padding: 10px; margin-right: 20px;"><</span>
+            <a href="#" style="margin-right: 20px;">1</a>
+            <a href="#" style="margin-right: 20px;">2</a>
+            <a href="#" style="margin-right: 20px;">3</a>
+            <a href="#" style="margin-right: 20px;">4</a>
+            <span style="background-color: rgb(0,86,210); height: 50px; padding: 10px;">></span>
+        </div><br><br><br><br><hr><br><br>
+
+        <main class="container-fluid"><h6>What Coursera Has to Offer</h6></main>
+        <br>
+        <main class="container-fluid">
+            <small style="color: gray; font-weight: 600;">Learning Program</small>
+            <small style="color: gray; font-weight: 600; margin-left: 60px;">Description</small>
+        </main>
+        <br>
+        <main class="container">
+            <div class="row">
+                <button style="border: none; border-radius: 3px;" class="col-sm-2">Guided Project</button>
+                <div class="col-sm-10">
+                <small>Learn a job-relevant skill that you can use today in under 2 hours through an interactive experience guided by a subject matter expert. Access everything you need 
+                    right in your browser and complete your project confidently with step-by-step instructions.</small>
+                </div>
+            </div>
+        </main><br><hr>
+
+        <main class="container">
+            <div class="row">
+                <button style="border: none; border-radius: 3px;" class="col-sm-2">Course</button>
+                <div class="col-sm-10">
+                <small>Take courses from the world's best instructors and universities. Courses include recorded auto-graded and peer-reviewed assignments, video lectures, and community discussion forums. When you complete a course, you’ll be 
+                    eligible to receive a shareable electronic Course Certificate for a small fee.</small>
+                </div>
+            </div>
+        </main><br><hr>
+
+        <main class="container">
+            <div class="row">
+                <button style="border: none; border-radius: 3px;" class="col-sm-2">Specialization</button>
+                <div class="col-sm-10">
+                <small>Enroll in a Specialization to master a specific career skill. You’ll complete a series of rigorous courses, tackle hands-on projects, and earn a Specialization
+                     Certificate to share with your professional network and potential employers.</small>
+                </div>
+            </div>
+        </main><br><hr>
+
+        <main class="container">
+            <div class="row">
+                <button style="border: none; border-radius: 3px;" class="col-sm-2">Certificate</button>
+                <div class="col-sm-10">
+                <small>Whether you’re looking to start a new career or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace from top companies and universities, apply your new skills to hands-on projects that showcase your 
+                    expertise to potential employers, and earn a career credential to kickstart your new career.</small>
+                </div>
+            </div>
+        </main><br><hr>
+
+        <main class="container">
+            <div class="row">
+                <button style="border: none; border-radius: 3px;" class="col-sm-2">MasterTrack</button>
+                <div class="col-sm-10">
+                <small>With MasterTrack® Certificates, portions of Master’s programs have been split into online modules, so you can earn a high quality university-issued career credential at a breakthrough price in a flexible, interactive format. Benefit from a deeply engaging learning experience with real-world projects and live, expert instruction. 
+                    If you are accepted to the full Master's program, your MasterTrack coursework counts towards your degree.</small>
+                </div>
+            </div>
+        </main><br><hr>
+
+        <main class="container">
+            <div class="row">
+                <button style="border: none; border-radius: 3px;" class="col-sm-2">Degree</button>
+                <div class="col-sm-10">
+                <small>Transform your resume with a degree from a top university for a breakthrough price. Our modular degree learning experience gives you the ability to study online anytime and earn credit as you complete your course assignments. You'll receive the same credential as students 
+                    who attend class on campus. Coursera degrees cost much less than comparable on-campus programs.
+                </small>
+                </div>
+            </div>
+        </main><br>
+
+
+
+
+        
+        <main style="background-color: rgb(245,245,245);">
+            <div class="container mt-5 pt-5 d-flex justify-content-between s-flex">
+                <ul>
+                    <h4 style="font-size: 20px; font-weight: 600;"> 
+                        Start or advance your career
+                    </h4>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Google Data Analyst
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Google Project Management
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Google UX Design
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Google IT Support
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        IBM Data Science
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        IBM Data Analyst
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        IBM Data Analytics with Excel and R
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        IBM Cybersercurity Analyst
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Facebook Social Media Marketing
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        IBM Full Stack Cloud Developer
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Salesforce Sales Development <br> Representative
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Salesforce Sales Operations
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Supporte de Technologias de la information <br>de Google
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Google IT Automation with Python
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Deeplearning.AI Tensorflow
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Popular Cybersercurity Certificates
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Popular SQL Certificates
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Popular IT Certificates
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        See all Certificates
+                    </li>
+                </ul>
+                <ul>
+                    <h4 style="font-size: 20px; font-weight: 600;"> 
+                             Browse popular topics
+                    </h4>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                         free courses
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                     learn a language
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        python
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Java
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                     web design
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        SQL
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                         Cursor Gratis
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                       Microsoft Excel
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Project Management
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Cybersercurity
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Human Resource
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                       Data Science Free Courses
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Speaking English
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                       content Writing
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Full Stack Web Development
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Artificate intelligence
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        C programming
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                      Communication skill
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        BlockChain
+                    </li>
+                    <li>
+                        see all courses
+                    </li>
+                </ul>
+                <ul>
+                    <h4 style="font-size: 20px; font-weight: 600;"> 
+                    Upskill your team
+                    </h4>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        skill for data science team
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Data Driven Decision Making
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Software Engineering skill
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        soft skill for Engineering team
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Management skill
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Marketing skill
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Skill for sales Teams
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                           Product Manager skill
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        skill for finance
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Android Development project
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                      Tensorflow and keras project
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        python for everybody
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Deep Learning
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Excel skill for business
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Business Foundation
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Machine Learning
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                      AWS Fundaments
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Data Engineering Foundations
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Data Analyst skill
+                    </li>
+                   <li>
+                     skill for UX Designers  
+                   </li>
+                </ul>
+                <ul>
+                    <h4 style="font-size: 20px; font-weight: 600;"> 
+                        Earn a degree or Certificates <br> online
+                    </h4>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        MasterTrack Certificates
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Professional Certificates
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;" >
+                      University Certificates
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        MBA & Business Degrees
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                     Data Science Degree
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Computer Science Degrees
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Data Analytics Degrees
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Public Health Degrees
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Social science Degrees
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Management Degrees
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Degrees from top European<br>Universities
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Master's Degrees
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Bachelor's Degrees
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        Degrees with a Performance Pathway
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                       BSC courses
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                      What is a Bachelor's Degrees
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        How long does a master's Degrees<br>take?
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        is an online MBA worth it?
+                    </li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                        7 Way to pay for Graduates school
+                    </li>
+                <li>
+                   see all Degrees 
+                </li>
+                </ul>
+                
+            </div>
+            <div class="container mt-5 pt-5 d-flex justify-content-between s-flex">
+                <ul>
+                    <h4 style="font-size: 20px; font-weight: 600;">Coursera</h4>
+                    
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">About</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">What We Offer</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Leadership</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Careers</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Catalog</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Coursera Plus</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Professional Certificates</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">MasterTrack® Certificates</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Degrees</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">For Enterprise</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">For Government</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">For Campus</li>
+                </ul>
+                <ul>
+                    <h4 style="font-size: 20px; font-weight: 600; padding-bottom: 10px;">Community</h4>
+
+
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Learners</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Partners</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Developers</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Beta Testers</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Translators</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Blog</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Tech Blog</li>
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Teaching Center</li>
+                </ul>
+                <ul>
+                    <h4 style="font-size: 20px; font-weight: 600;">More</h4>    
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Press</li>  
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Investors</li>  
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Terms</li>  
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Privacy</li>   
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Help</li>     
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Accessibility</li>     
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Contact</li>     
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Articles</li>   
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Directory</li> 
+                    <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Affiliates</li>
+                </ul>
+                <ul>
+                    <li><img src="../Cousera landing page/store1.PNG" alt="" style="width: 120px;"></li>
+                    <li><img src="../Cousera landing page/store2 - Copy.PNG" alt="" style="width: 120px;"></li>
+                    <li><img src="../Cousera landing page/store3.PNG" alt=""></li>
+                </ul>
+            </div>
+        </main>
+
+
+
+
+
+
+</body>
+</html>
+<script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
