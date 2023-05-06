@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project ibm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="small1.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    .dropbtn {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        height: 45px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .whole_div {
+        background-color: black;
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .help {
+        border: none;
+        width: 100px;
+        border-radius: 3px;
+        height: 40px;
+        background-color: blue;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    input {
+        width: 300px;
+        height: 40px;
+    }
+
+    .mop {
+        background-color: #D6EDF6;
+        height: 70px;
+    }
+
+    .butt1 {
+        width: 200px;
+        height: 60px;
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 3px;
+        border: none;
+    }
+
+    .butt2 {
+        width: 250px;
+        height: 60px;
+        background-color: white;
+        color: blue;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 3px;
+        border: 2px solid blue;
+    }
+
+    .hmm {
+        height: 40px;
+        background-color: blue;
+        width: 40px;
+        margin-left: -7px;
+        color: blue;
+    }
+
+    .box {
+        width: 300px;
+        height: 400px;
+        margin: 2px;
+    }
+
+    .loop {
+        text-decoration: none;
+    }
+
+    .loop:hover {
+        text-decoration: underline;
+    }
+
+    .cardss {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .cardsss {
+        display: flex;
+        /* justify-content: space-around; */
+        margin: 15px;
+    }
+
+    .four {
+        width: 270px;
+        height: 70px;
+        background-color: white;
+        border: 1px solid white;
+        /* border-radius: 10px; */
+        box-shadow: 0px 0px 10px lightgrey;
+    }
+    .abt-cont{
+        margin-left: 10px;
+        /* border: 1px solid green; */
+    }
+    #not1 {
+        display: none !important;
+    }
+
+    .line-one {
+        display: flex;
+    }
+
+    #dayy {
+        display: flex;
+    }
+
+    .bout {
+        display: flex;
+        justify-content: space-around;
+        /* margin-left: 50px;
+        margin-right: 100px; */
+    }
+
+    .imss {
+        background-image: url(../pic.PNG);
+        background-size: cover;
+        /* height: 700px; */
+        /* width: 100%; */
+    }
+    .second-b{
+        display:none;
+    }
+    .bold:hover{
+        text-decoration: underline;
+    }
+    .font1:hover{
+        text-decoration: underline;
+        color: #014c8c;
+    }
+    .rav{
+        font-size: 18px; 
+        font-weight: bold; 
+        color: black;
+    }
+    .rav:hover{
+        color: #014c8c;
+    }
+    @media screen and (max-width:760px) {
+
+        .cardss,
+        .cards,
+        .cardsss {
+            display: block;
+        }
+        .eye3{
+            font-size: 10px;
+            font-weight: normal;
+        }
+        .imss{
+            width: 100%;
+        }
+
+        .input {
+            display: none;
+        }
+        .eye2{
+            width: 10%;
+        }
+
+        .dropdown {
+            display: none;
+        }
+
+        #dayy {
+            display: none;
+        }
+
+        .list {
+            display: none;
+        }
+
+        .imgs {
+            width: 100px;
+        }
+
+        .bout {
+            display: block;
+        }
+
+        .imss {
+            height: 800px;
+        }
+        .first-b{
+            display:none;
+        }
+        .second-b{
+            display:block;
+        }
+    
+    }
+</style>
+
+<body>
+    <!-- <nav class="d-flex justify-content-around" id="not1">
+        <i class="fa fa-bars"></i>
+        <span style="font-size: 30px; font-weight: bold; color: blue;">coursera</span>
+        <i class="fa fa-search"></i>
+    </nav> -->
+    <nav class="container-fluid d-flex justify-content-between">
+        <div class="line-one">
+            <div>
+                <span style="font-size: 30px; font-weight: bold; color: blue;">coursera</span>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Explore <i class="fa fa-angle-down"></i></button>
+                    <div>
+                        <div class="dropdown-content" style="width: 300px; height: 600px; overflow-y: scroll; ">
+                            <div>
+                                <div>
+                                    <h5 style="padding-left: 15px;">Goals</h5>
+                                    <a href="#">Take a free course <i class="fa fa-chevron-right pl-5 ml-5"></i></a>
+                                    <a href="#">Earn a Degree <i class="fa fa-chevron-right"
+                                            style="padding-left: 120px;"></i> </a>
+                                    <a href="#">Earn Certificate <i class="fa fa-chevron-right"
+                                            style="padding-left: 110px;"></i></a>
+                                    <a href="#">Launch or advance your career <i class="fa fa-chevron-right"></i></a>
+                                </div>
+
+                                <div>
+                                    <h5 style="padding-left: 15px;">Subjects</h5>
+                                    <a href="#">Data Science <i class="fa fa-chevron-right"
+                                            style="padding-left: 120px;"></i></a>
+                                    <a href="#">Business <i class="fa fa-chevron-right"
+                                            style="padding-left: 150px ;"></i></a>
+                                    <a href="#">Computer Science <i class="fa fa-chevron-right"
+                                            style="padding-left: 80px;"></i></a>
+                                    <a href="#">Information Technology <i class="fa fa-chevron-right"
+                                            style="padding-left: 35px;"></i></a>
+                                    <a href="#">Language Learning <i class="fa fa-chevron-right"
+                                            style="padding-left: 70px;"></i></a>
+                                    <a href="#">Health <i class="fa fa-chevron-right"
+                                            style="padding-left: 160px;"></i></a>
+                                    <a href="#">Personal Development <i class="fa fa-chevron-right"
+                                            style="padding-left: 50px;"></i></a>
+                                    <a href="#">Physical Science and Engineering <i class="fa fa-chevron-right"></i></a>
+                                    <a href="#">Social Sciences <i class="fa fa-chevron-right pl-5 ml-5"></i></a>
+                                    <a href="#">Arts and Humanities <i class="fa fa-chevron-right"
+                                            style="padding-left: 60px;"></i></a>
+                                    <a href="#">Math and Logic <i class="fa fa-chevron-right pl-5 ml-5"></i></a>
+                                    <button
+                                        style=" border: 1px solid blue; background-color: transparent; width: 200px; color: blue; margin-left: 20px;">Browse
+                                        all Subjects</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="input">
+                <input type="text" placeholder="what do you want to learn?">
+                <button class="hmm">
+                    <i class="fa fa-search text-white"></i>
+                </button>
+            </div>
+        </div>
+        <div id="dayy">
+            <h6 class="pr-4">for Enterprise </h6>
+            <h6 class="pr-4"> for students</h6>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="loop">
+                Log in
+            </a>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body container">
+                            <div class="container">
+                                <h3 style="font-weight: 400; font-size: 35px; text-align: center;">Welcome back</h3>
+                                <div>
+                                    <label style="font-weight: 700; font-size: 13px;">EMAIL</label><br>
+                                    <input type="text" placeholder="name@email.com" style="width: 90%; height: 50px;">
+                                </div>
+                                <div class="mt-3">
+                                    <label style="font-weight: 700; font-size: 13px;">PASSWORD</label><br>
+                                    <input type="text" placeholder="Enter your password"
+                                        style="width: 90%; height: 50px;">
+                                </div>
+                                <a href="#" style=" text-decoration: none;">Forget password?</a><br><br><br>
+                                <div>
+                                    <button
+                                        style="background-color: rgb(0,86,210); color: white; font-weight: 400; border: none; border-radius: 5px; width: 90%; height: 50px;">Login</button>
+                                </div>
+                                <div style="display: flex; padding-top: 10px;">
+                                    <hr width="40%">
+                                    <span style="padding-left: 15px; padding-right: 15px;">or</span>
+                                    <hr width="40%">
+                                </div>
+                                <div class="mt-2">
+                                    <button
+                                        style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black;"><img
+                                            src="../loe1.PNG"> Continue with Google</button><br><br>
+                                    <button
+                                        style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black;"><img
+                                            src="../loe2.PNG">Continue with Facebook</button><br><br>
+                                    <button
+                                        style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black;"><img
+                                            src="../loe3.PNG" style="padding-left:100px;">Continue with Apple</button>
+
+                                </div>
+                                <div style="text-align: center;">
+                                    <span>New to Coursera?</span>
+                                    <a href="#" style="text-decoration: none;">Sign up</a>
+                                </div>
+                                <hr>
+                                <div style="text-align: center;">
+                                    <a href="#" style="text-decoration: none;">Log in with your organization</a>
+                                </div><br>
+                                <div style="text-align: center;">
+                                    <span>Having trouble logging in?</span>
+                                    <a href="#" style="color: black;">Learner help center</a>
+                                </div><br>
+                                <div style="text-align: center;">
+                                    <span>This site is protected by reCAPTCHA Enterprise and <br> the Google</span>
+                                    <a href="#" style="color:black;">Privacy Policy.</a>
+                                    <span>and</span>
+                                    <a href="#" style="color: black;">Terms and Service</a>
+                                    <span>apply.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Join for Free
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body container">
+                            <div class="container">
+                                <h3 style="font-weight: 400; font-size: 35px; text-align: center;">Sign up</h3>
+                                <div>
+                                    <label style="font-weight: 700; font-size: 13px;">FULL NAME</label><br>
+                                    <input type="text" placeholder="Enter your name" style="width: 90%; height: 50px;">
+                                </div>
+                                <div class="mt-3">
+                                    <label style="font-weight: 700; font-size: 13px;">EMAIL</label><br>
+                                    <input type="text" placeholder="name@email.com" style="width: 90%; height: 50px;">
+                                </div>
+                                <div class="mt-3">
+                                    <label style="font-weight: 700; font-size: 13px;">PASSWORD</label><br>
+                                    <input type="text" placeholder="create your password"
+                                        style="width: 90%; height: 50px;">
+                                </div>
+                                <span>Between 8 and 72 characters</span><br><br>
+                                <div>
+                                    <button
+                                        style="background-color: rgb(0,86,210); color: white; font-weight: 400; border: none; border-radius: 5px; width: 90%; height: 50px;">Join
+                                        for Free</button>
+                                </div>
+                                <div style="display: flex; padding-top: 10px;">
+                                    <hr width="40%">
+                                    <span style="padding-left: 15px; padding-right: 15px;">or</span>
+                                    <hr width="40%">
+                                </div>
+                                <div class="mt-2">
+                                    <button
+                                        style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black; "><img
+                                            src="../loe1.PNG" style="padding-right: 135px;"> Continue with
+                                        Google</button><br><br>
+                                    <button
+                                        style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black;"><img
+                                            src="../loe2.PNG" style="padding-right: 135px;">Continue with
+                                        Facebook</button><br><br>
+
+                                </div>
+                                <div style="text-align: center;">
+                                    <span>New to Coursera?</span>
+                                    <a href="#" style="text-decoration: none;">Sign up</a>
+                                </div>
+                                <hr>
+                                <div style="text-align: center;">
+                                    <a href="#" style="text-decoration: none;">Log in with your organization</a>
+                                </div><br>
+                                <div style="text-align: center; font-size: 12px;">
+                                    <span>I agree Coursera's</span>
+                                    <a href="#" style="color: black;">Terms of use </a>
+                                    <span>and</span>
+                                    <a href="#" style="color: black;">Privacy Notice</a><br>
+                                    <span>Having trouble logging in?</span>
+                                    <a href="#" style="color: black;">Learner help center</a>
+                                </div><br>
+                                <div style="text-align: center; font-size: 12px;">
+                                    <span>This site is protected by reCAPTCHA Enterprise and <br> the Google</span>
+                                    <a href="#" style="color:black;">Privacy Policy.</a>
+                                    <span>and</span>
+                                    <a href="#" style="color: black;">Terms and Service</a>
+                                    <span>apply.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <main class="pt-3">
+        <div class="imss" >
+            <main class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="pt-5">
+                            <span style="color: white; font-weight: bold;" class="list">
+                                Browse <i class="fa fa-angle-right"></i>
+                            </span>
+                            <span style="color: white; font-weight: bold; padding-left: 15px;" class="eye3">
+                                Data Science <i class="fa fa-angle-right"></i>
+                            </span>
+                            <span style="color: white; font-weight: bold; padding-left: 15px;" class="list">
+                                Data Analytics <i class="fa fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <div class="pt-5">
+                            <h2 style="font-weight: 700; font-size: 34px; color: white;">IBM Data Science Professional
+                                <br> Certificate
+                            </h2>
+                            <span style="font-size: 14px; color: white; font-weight: 400;">
+                                Kickstart your career in data science & ML. Build data science skills, learn Python &
+                                <br>
+                                SQL, analyze & visualize data, build machine learning models. No degree or prior <br>
+                                experience required.
+                            </span>
+                        </div>
+                        <div id="coin" style="display: flex;">
+                            <div id="bit">
+                                <i class="fa fa-star" style="color: rgb(225, 156, 37);"></i>
+                                <i class="fa fa-star" style="color: rgb(225, 156, 37);"></i>
+                                <i class="fa fa-star" style="color: rgb(225, 156, 37);"></i>
+                                <i class="fa fa-star" style="color: rgb(225, 156, 37);"></i>
+                                <i class="fa fa-star-half-o" style="color: rgb(225, 156, 37);"></i>
+                            </div>
+                            <span style="color: rgb(225, 156, 37); font-weight: bold; padding-left: 10px;">4.6</span>
+                            <span style="color: white; padding-left: 10px;" id="bit2">48,855 ratings</span>
+                        </div>
+                        <div class="pt-4">
+                            <img src="../eye2.jpg" alt="" style="border-radius: 100%; " class="eye2">
+                           <a href="#"><span style="color: white;">Rav Ahuja</a></span>
+                           <a href="#" ><span style="text-decoration: underline; color: white; background-color: transparent;">+8
+                                more intructors</a></span><br>
+
+                            <div class="first-b">
+                                    <div style="display: flex;">
+                                        <button type="button"
+                                        style="background-color:white;color: black;border:2px solid white;width: 30%;height: 80px;margin-top: 50px;"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <h5>Enroll for Free</h5>
+                                        <div>start sep3</div> 
+                                    </button>
+                                    <div style="color:white; padding-top: 12%; padding-left: 5%;">financial aid avaliable</div>
+                                    </div>
+                                <div style="color:white;padding-top: 30px;font-weight: bold;font-size:17px ;">29,707 already enrolled</div>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body container">
+                                                <div class="container">
+                                                    <h3 style="font-weight: 400; font-size: 35px; text-align: center;">
+                                                        Sign
+                                                        up</h3>
+                                                    <div>
+                                                        <label style="font-weight: 700; font-size: 13px;">FULL
+                                                            NAME</label><br>
+                                                        <input type="text" placeholder="Enter your name"
+                                                            style="width: 90%; height: 50px;">
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <label
+                                                            style="font-weight: 700; font-size: 13px;">EMAIL</label><br>
+                                                        <input type="text" placeholder="name@email.com"
+                                                            style="width: 90%; height: 50px;">
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <label
+                                                            style="font-weight: 700; font-size: 13px;">PASSWORD</label><br>
+                                                        <input type="text" placeholder="create your password"
+                                                            style="width: 90%; height: 50px;">
+                                                    </div>
+                                                    <span>Between 8 and 72 characters</span><br><br>
+                                                    <div>
+                                                        <button
+                                                            style="background-color: rgb(0,86,210); color: white; font-weight: 400; border: none; border-radius: 5px; width: 90%; height: 50px;">Join
+                                                            for Free</button>
+                                                    </div>
+                                                    <div style="display: flex; padding-top: 10px;">
+                                                        <hr width="40%">
+                                                        <span style="padding-left: 15px; padding-right: 15px;">or</span>
+                                                        <hr width="40%">
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <button
+                                                            style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black; "><img
+                                                                src="../loe1.PNG" style="padding-right: 135px;">
+                                                            Continue
+                                                            with Google</button><br><br>
+                                                        <button
+                                                            style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black;"><img
+                                                                src="../loe2.PNG" style="padding-right: 135px;">Continue
+                                                            with Facebook</button><br><br>
+
+                                                    </div>
+                                                    <div style="text-align: center;">
+                                                        <span>New to Coursera?</span>
+                                                        <a href="#" style="text-decoration: none;">Sign up</a>
+                                                    </div>
+                                                    <hr>
+                                                    <div style="text-align: center;">
+                                                        <a href="#" style="text-decoration: none;">Log in with your
+                                                            organization</a>
+                                                    </div><br>
+                                                    <div style="text-align: center; font-size: 12px;">
+                                                        <span>I agree Coursera's</span>
+                                                        <a href="#" style="color: black;">Terms of use </a>
+                                                        <span>and</span>
+                                                        <a href="#" style="color: black;">Privacy Notice</a><br>
+                                                        <span>Having trouble logging in?</span>
+                                                        <a href="#" style="color: black;">Learner help center</a>
+                                                    </div><br>
+                                                    <div style="text-align: center; font-size: 12px;">
+                                                        <span>This site is protected by reCAPTCHA Enterprise and <br>
+                                                            the
+                                                            Google</span>
+                                                        <a href="#" style="color:black;">Privacy Policy.</a>
+                                                        <span>and</span>
+                                                        <a href="#" style="color: black;">Terms and Service</a>
+                                                        <span>apply.</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 pt-5 ">
+                        <span style="color: white; padding-left: 20px;">Offered By</span><br>
+                        <img src="../ibm3.png" alt="" style="padding-top: 10px;" class="imgs">
+
+                    </div>
+
+
+                    <div class="second-b">
+                        <button type="button"
+                            style="background-color:white;color: black;border:2px solid white;width: 170px;height: 80px;margin-top: 50px;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <h5>Enroll for Free</h5>
+                            <div>start sep3</div>
+                        </button>
+                        <div>49,558 already enrolled</div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body container">
+                                        <div class="container">
+                                            <h3 style="font-weight: 400; font-size: 35px; text-align: center;">Sign
+                                                up</h3>
+                                            <div>
+                                                <label style="font-weight: 700; font-size: 13px;">FULL
+                                                    NAME</label><br>
+                                                <input type="text" placeholder="Enter your name"
+                                                    style="width: 90%; height: 50px;">
+                                            </div>
+                                            <div class="mt-3">
+                                                <label style="font-weight: 700; font-size: 13px;">EMAIL</label><br>
+                                                <input type="text" placeholder="name@email.com"
+                                                    style="width: 90%; height: 50px;">
+                                            </div>
+                                            <div class="mt-3">
+                                                <label style="font-weight: 700; font-size: 13px;">PASSWORD</label><br>
+                                                <input type="text" placeholder="create your password"
+                                                    style="width: 90%; height: 50px;">
+                                            </div>
+                                            <span>Between 8 and 72 characters</span><br><br>
+                                            <div>
+                                                <button
+                                                    style="background-color: rgb(0,86,210); color: white; font-weight: 400; border: none; border-radius: 5px; width: 90%; height: 50px;">Join
+                                                    for Free</button>
+                                            </div>
+                                            <div style="display: flex; padding-top: 10px;">
+                                                <hr width="40%">
+                                                <span style="padding-left: 15px; padding-right: 15px;">or</span>
+                                                <hr width="40%">
+                                            </div>
+                                            <div class="mt-2">
+                                                <button
+                                                    style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black; "><img
+                                                        src="../loe1.PNG" style="padding-right: 135px;"> Continue
+                                                    with Google</button><br><br>
+                                                <button
+                                                    style="width: 90%; height: 50px; border-radius: 3px; font-weight: 700; background-color: transparent; border: 1px solid black;"><img
+                                                        src="../loe2.PNG" style="padding-right: 135px;">Continue
+                                                    with Facebook</button><br><br>
+
+                                            </div>
+                                            <div style="text-align: center;">
+                                                <span>New to Coursera?</span>
+                                                <a href="#" style="text-decoration: none;">Sign up</a>
+                                            </div>
+                                            <hr>
+                                            <div style="text-align: center;">
+                                                <a href="#" style="text-decoration: none;">Log in with your
+                                                    organization</a>
+                                            </div><br>
+                                            <div style="text-align: center; font-size: 12px;">
+                                                <span>I agree Coursera's</span>
+                                                <a href="#" style="color: black;">Terms of use </a>
+                                                <span>and</span>
+                                                <a href="#" style="color: black;">Privacy Notice</a><br>
+                                                <span>Having trouble logging in?</span>
+                                                <a href="#" style="color: black;">Learner help center</a>
+                                            </div><br>
+                                            <div style="text-align: center; font-size: 12px;">
+                                                <span>This site is protected by reCAPTCHA Enterprise and <br> the
+                                                    Google</span>
+                                                <a href="#" style="color:black;">Privacy Policy.</a>
+                                                <span>and</span>
+                                                <a href="#" style="color: black;">Terms and Service</a>
+                                                <span>apply.</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </main>
+    <nav>
+        <div class="bout" id="bout">
+            <div style="color:blue;font-weight: bold;">About</div>
+            <div>How It Works</div>
+            <div>Courses</div>
+            <div>Instructors</div>
+            <div>Enrollment Option</div>
+            <div>FAQ</div>
+        </div>
+            <div style="display: flex; padding-top: 20px;border-bottom: 1px solid grey;">
+                <!-- <hr style="background-color: rgb(175, 151, 151);width:1300px;"> -->
+            </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="img-cont">
+                        <img class="img1" src="../sss.PNG" style="margin-top: 10px;">
+                        <img class="img1" src="../sss1.PNG">
+                    </div>
+
+                   <div class="abt-cont" style="padding-top: 80px;">
+                    <h4 style="font-weight:bold;">About this Professional Certificate</h4> 
+                    <h5 style="color:grey;font-size:13px;font-weight:bold;">738,820 recent views</h5> 
+                    <div style="padding-top: 20px;">Data science is one of the hottest professions of the decade, and the demand for data scientists who can analyze data and communicate results to inform data driven decisions has never been greater. This Professional Certificate from IBM will help anyone interested in pursuing a <span style="font-weight: bold;">career in data science</span> or machine learning develop career-relevant skills and experience. </div>
+                      <div style="padding-top: 17px;">
+                         It’s a myth that to become a data scientist you need a Ph.D. Anyone with a passion for learning can take this Professional Certificate – <span style="font-weight: bold;"> no prior knowledge of computer science or programming languages required </span> – and develop the skills,tools, and portfolio to have a competitive edge in the job market as an entry level data scientist.  
+                      </div>
+                      <div style="padding-top: 17px;">
+                         The program consists of 9 online courses that will provide you with the <span style="font-weight: bold;"> latest job-ready tools and skills,</span> including open source tools and libraries, Python, databases, SQL, data visualization, data analysis, statistical analysis, predictive modeling, and machine learning algorithms. You’ll learn data science through hands-on practice in the IBM Cloud using real data science tools and real-world data sets.
+                         <div style="padding-top: 17px;">
+                             Upon successfully completing these courses, you will have built a portfolio of data science projects to provide you with the confidence to plunge into an exciting profession in data science.  
+                             <div style="padding-top: 17px;">
+                                 In addition to earning a Professional Certificate from Coursera, you'll also receive a <span style="font-weight: bold;"> digital badge from IBM </span> recognizing your proficiency in data science.   
+                             </div>
+                         </div>
+                      </div>
+                 </div>
+                </div>
+                <div class="col-sm-4 mt-5" style="background-color: #f3f3f3; height: 150px;">
+                    <div>
+                        <div style=" padding-top: 25px; display: flex;padding-left: 20px;">
+                            <img src="../blue.PNG" alt="">
+                            <h5 style="font-weight: 700; font-size: 16px; ">LEARNER CAREER OUTCOMES</h5>
+                        </div>
+                        <div style="display: flex;">
+                            <h5 style="font-weight: 700; font-size: 20px; padding-left: 20px;">20%</h5>
+                            <span style="font-size: 16px; font-weight: 400; padding-left: 15px;">Started a new career after completing <br> this specialization.</span>
+                        </div>
+                    </div> <br><br>
+                    <div>
+                        <div style="display: flex;">
+                            <img src="../blue2.PNG" alt="">
+                            <h5 style="font-weight: 700; font-size: 20px; padding-left: 20px; padding-top: 10px;">Shareable Certificate</h5>
+                        </div>
+                        <div style="font-size: 16px; font-weight: 400; padding-left: 65px; margin-top: -15px;">
+                            Earn a Certificate upon completion
+                        </div>
+                    </div><br><br>
+                    <div>
+                        <div style="display: flex;">
+                            <img src="../blue3.PNG" alt="">
+                            <h5 style="font-weight: 700; font-size: 20px; padding-left: 20px; padding-top: 10px;">100% online courses</h5>
+                        </div>
+                        <div style="font-size: 16px; font-weight: 400; padding-left: 70px; margin-top: -25px;">
+                            Start instantly and learn at your own <br> schedule.
+                        </div>
+                    </div><br><br>
+                    <div>
+                        <div style="display: flex;">
+                            <img src="../blue4.PNG" alt="">
+                            <h5 style="font-weight: 700; font-size: 20px; padding-left: 20px; padding-top: 10px;">Flexible Schedule</h5>
+                        </div>
+                        <div style="font-size: 16px; font-weight: 400; padding-left: 75px; margin-top: -20px;">
+                            Set and maintain flexible deadlines.
+                        </div>
+                    </div><br><br>
+                    <div>
+                        <div style="display: flex;">
+                            <img src="../blue5.PNG" alt="">
+                            <h5 style="font-weight: 700; font-size: 20px; padding-left: 20px; padding-top: 10px;">Beginner Level</h5>
+                        </div>
+                        <div style="font-size: 16px; font-weight: 400; padding-left: 80px; margin-top: -25px;">
+                            No prior experience required.
+                        </div>
+                    </div><br><br>
+                    <div>
+                        <div style="display: flex;">
+                            <img src="../blue6.PNG" alt="">
+                            <h5 style="font-weight: 700; font-size: 20px; padding-left: 20px; padding-top: 10px;">Approximately 11 months <br> to complete</h5>
+                        </div>
+                        <div style="font-size: 16px; font-weight: 400; padding-left: 80px; margin-top: -10px;">
+                            Suggested pace of 3 hours/week
+
+                        </div>
+                    </div><br><br>
+                    <div>
+                        <div style="display: flex;">
+                            <img src="../blue6.PNG" alt="">
+                            <h5 style="font-weight: 700; font-size: 20px; padding-left: 20px; padding-top: 10px;">English</h5>
+                        </div>
+                        <div style="font-size: 16px; font-weight: 400; padding-left: 80px; margin-top: -25px;">
+                            Subtitles: English, Arabic, French, <br>
+                             Portuguese (European), Italian, <br>
+                              Vietnamese, German, Russian, Spanish, <br>
+                               Persian, Turkish
+
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+
+        </div>
+    
+       
+
+
+            
+
+        
+        
+    </nav>
+    <main>
+        <h3 style="padding-top: 25px;margin-left:65px ;font-weight: bold;">Applied Learning Project</h3>
+        <div style="margin-left: 60px;">Throughout the program, you’ll complete <span style="font-weight: bold;">hands-on projects and labs</span> and gain a firm grasp on the technical<br> skills required to effectively gather, wrangle, mine, and visualize data, as well as soft skills for working with<br> stakeholders and storytelling with data to engage your audience. </div>
+        <div style="padding-top: 30px;margin-left: 65px;"> At the end of the program, you will complete <span style="font-weight: bold;">a real-world capstone project</span> specifically designed to showcase<br> your newly learned data analyst skills. </div>
+        <div style="padding-top: 30px;margin-left: 65px;"> All these projects can be combined into a portfolio on GitHub or another service to clearly convey your<br> experience and skills to potential employers.</div>
+        
+        <h3 style="padding-top: 50px;margin-left: 40px;text-align: center;font-weight: bold;">What is a Professional Certificate?</h3>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <h5 style="font-weight: bold;">Build the Skills to Get Job Ready</h5>
+                    <div>Whether you’re looking to start a new career, or change your current one,<br> Professional Certificates on Coursera help you become job ready. Learn at your<br> own pace, whenever and wherever it’s most convenient for you. Enroll today and<br> explore a new career path with a 7 day free trial. You can pause your learning or<br> end your subscription at any time.</div>
+                    <h5 style="font-weight: bold; padding-top: 30px;">Hands-On Projects</h5>
+                    <div>Apply your skills with hands-on projects and build a portfolio that showcases your<br> job readiness to potential employers. You'll need to successfully finish<br> the project(s) to earn your Certificate.</div>
+                    <h5 style="padding-top: 30px;font-weight: bold;">Earn a Career Credential</h5>
+                    <div>When you complete all of the courses in the program, you'll earn a Certificate<br> to share with your professional network as well as unlock access to career support<br> resources to help you kickstart your new career. Many Professional Certificates<br> have hiring partners that recognize the Professional Certificate credential and<br> others can help prepare you for a certification exam. You can find more<br> information on individual Professional Certificate pages where it applies.</div>
+
+                </div>
+                <div class="col-sm-5">
+                    <img src="../lady_looking.png" alt="" width="115%">
+                </div>
+            </div>
+
+
+        </div>
+        <div style="display: flex; padding-top: 70px;border-bottom: 1px solid gray;">
+            <!-- <hr style="background-color: rgb(175, 151, 151);width:1300px;"> -->
+        </div>
+        <h3 style="padding-top: 60px;font-weight: bold;margin-left: 60px;text-align: center;">There are 9 Courses in this Professional Certificate</h3>
+        <div class="container pt-2">
+            <div class="row pt-5">
+                <div class="col-sm-2">
+                    <div>
+                        <div style="color: #6e767f; font-size: 16px; font-weight: 700;">
+                            COURSE
+                        </div>
+                        <div style="color: #6e767f; font-size: 50px; font-weight: lighter; padding-top: 15px; font-family: Arial, Helvetica, sans-serif;">
+                            1
+                        </div>
+                    </div>
+                    <div style="padding-top: 80px;">
+                        <div style="color: #6e767f; font-size: 16px; font-weight: 700;">
+                            COURSE
+                        </div>
+                        <div style="color: #6e767f; font-size: 50px; font-weight: lighter; font-family: Arial, Helvetica, sans-serif; padding-top: 15px;">
+                            2
+                        </div>
+                    </div>
+                    <div style="padding-top: 60px;">
+                        <div style="color: #6e767f; font-size: 16px; font-weight: 700;">
+                            COURSE
+                        </div>
+                        <div style="color: #6e767f; font-size: 50px; font-weight: lighter; font-family: Arial, Helvetica, sans-serif; padding-top: 15px;">
+                            3
+                        </div>
+                    </div>
+                    <div style="padding-top: 60px;">
+                        <div style="color: #6e767f; font-size: 16px; font-weight: 700;">
+                            COURSE
+                        </div>
+                        <div style="color: #6e767f; font-size: 50px; font-weight: lighter; font-family: Arial, Helvetica, sans-serif; padding-top: 15px;">
+                            4
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-10">
+                    <h3 class="bold" style="color:#0062e4; font-weight: bold; font-size: 22px;" >lntroduction to Data Analytics</h3>  
+                    <div class="pt-3">
+                        <img src="../star.PNG" alt="">
+                        <span style="font-weight: bold; font-size: 20px;">4.8</span>
+                        <span style="padding-left: 10px;">3,213 ratings</span>
+                        <span style="padding-left: 10px;">716 reviews</span>
+
+                        <div style="color: #373a3c; font-size: 14px; font-weight: 400;">
+                            This course presents a gentle introduction into the concepts of data analysis, the role of a Data Analyst, and the tools that are used to perform 
+                             daily functions. You will gain an understanding of the data ecosystem and the fundamentals of data analysis, such as data gathering or data <br>
+
+                             <a href="#" data-toggle="collapse" data-target="#demo" style="font-weight: bold;">SHOW ALL</a>
+                             <div id="demo" class="collapse">
+                                mining.  You will then learn the soft skills that are required to effectively communicate your data to stakeholders, and how mastering these skills can give you the option to become a data driven decision maker. <br> <br>
+
+                                This course will help you to differentiate between the roles of a Data Analyst, Data Scientist, and Data Engineer. You will learn the responsibilities of a Data Analyst and exactly what data analysis entails. You will be able to summarize the data ecosystem, such as databases and data warehouses. You will then uncover the major vendors within the data ecosystem and explore the various tools on-premise and in the cloud. Continue this exciting journey and discover Big Data platforms such as Hadoop, Hive, and Spark. By the end of this course you will be able to visualize the daily life of a Data Analyst, understand the different career paths that are available for data analytics, and identify the many resources available for mastering this profession. <br><br>
+
+                                 Throughout this course you will learn the key aspects to data analysis. You will begin to explore the fundamentals of gathering data, and learning how to identify your data sources. You will then learn how to clean, analyze, and share your data with the use of visualizations and dashboard tools. This all comes together in the final project where it will test your knowledge of the course material, explore what it means to be a Data Analyst, and provide a real-world scenario of data analysis. <br><br>
+
+                                 This course does not require any prior data analysis, spreadsheet, or computer science experience. All you need to get started is basic computer literacy, high school level math, and access to a modern web browser such as Chrome or Firefox. <br><br>
+                             </div>
+                        </div>
+                    </div> <hr style="color: lightgray;">
+                    <h3 class="bold" style="color:#0062e4; font-weight: bold; font-size: 22px;" >Excel Basics for Data Analysis</h3>  
+                    <div class="pt-3">
+                        <img src="../star.PNG" alt="">
+                        <span style="font-weight: bold; font-size: 20px;">4.7</span>
+                        <span style="padding-left: 10px;">1,436 ratings</span>
+                        <span style="padding-left: 10px;">260 reviews</span>
+
+                        <div style="color: #373a3c; font-size: 14px; font-weight: 400;">
+                            This course is designed to provide you with basic working knowledge for using Excel spreadsheets for Data Analysis. It covers some of the first<br>
+                            steps for working with spreadsheets and their usage in the process of analyzing data.  It includes plenty of videos, demos, and examples for you<br> to learn,followed by step-by-step instructions for you to apply and practice on a live spreadsheet.
+
+                             <a href="#" data-toggle="collapse" data-target="#demo" style="font-weight: bold;">SHOW ALL</a>
+                             <div id="demo" class="collapse">
+                                Excel is an essential tool for working with data - whether for business, marketing, data analytics, or research. This course is suitable for those<br> aspiring to take up Data Analysis or Data Science as a profession, as well as those who just want to use Excel for data analysis in their own<br> domains. You will gain valuable experience in cleansing and wrangling data using functions and then analyze your data using techniques like<br> filtering, sorting and creating pivot tables.   
+
+                                This course starts with an introduction to spreadsheets like Microsoft Excel and Google Sheets and loading data from multiple formats.With<br> this introduction you will then learn to perform some basic level data wrangling and cleansing tasks and continue to expand your knowledge of<br> analyzing data through the use of filtering, sorting, and using pivot tables within the spreadsheet. By performing these tasks throughout the<br> course, it will give you an understanding of how spreadsheets can be used as a data analysis tool and understand its limitations. <br>
+                                
+                                There is a strong focus on practice and applied learning in this course. With each lab, you will gain hands-on experience in manipulating data<br> and begin to understand the important role of spreadsheets. Clean and analyze your data faster by understanding functions in the formatting<br> of data. You will then convert your data to a pivot table and learn its features to make your data organized and readable. The final project<br> enables you to show off your newly acquired data analysis skills. By the end of this course you will have worked with several data sets and<br> spreadsheets and demonstrated the basics of cleaning and analyzing data all without having to learn any code. 
+                                
+                                Getting started with Excel is made easy in this course. It does not require any prior experience with spreadsheets or coding. Nor does it require downloads or installation of any software. All you need is a device with a modern web browser, and ability to create a Microsoft account to access Excel online at no-cost.  However if you already have a desktop version of Excel, you can follow along quite easily as well.<br><br>
+                             </div>
+                        </div>
+                    </div> <hr style="color: lightgray;">
+                    <h3 class="bold" style="color:#0062e4; font-weight: bold; font-size: 22px;" >Data visualization and Dashboard with Excel Cogons</h3>  
+                    <div class="pt-3">
+                        <img src="../star.PNG" alt="">
+                        <span style="font-weight: bold; font-size: 20px;">4.7</span>
+                        <span style="padding-left: 10px;">719 ratings</span>
+                        <span style="padding-left: 10px;">117 reviews</span>
+
+                        <div style="color: #373a3c; font-size: 14px; font-weight: 400;">
+                            This course presents a gentle introduction into the concepts of data analysis, the role of a Data Analyst, and the tools that are used to perform 
+                             daily functions. You will gain an understanding of the data ecosystem and the fundamentals of data analysis, such as data gathering or data <br>
+
+                             <a href="#" data-toggle="collapse" data-target="#demo" style="font-weight: bold;">SHOW ALL</a>
+                             <div id="demo" class="collapse">
+                                mining.  You will then learn the soft skills that are required to effectively communicate your data to stakeholders, and how mastering these skills can give you the option to become a data driven decision maker. <br> <br>
+
+                                This course will help you to differentiate between the roles of a Data Analyst, Data Scientist, and Data Engineer. You will learn the responsibilities of a Data Analyst and exactly what data analysis entails. You will be able to summarize the data ecosystem, such as databases and data warehouses. You will then uncover the major vendors within the data ecosystem and explore the various tools on-premise and in the cloud. Continue this exciting journey and discover Big Data platforms such as Hadoop, Hive, and Spark. By the end of this course you will be able to visualize the daily life of a Data Analyst, understand the different career paths that are available for data analytics, and identify the many resources available for mastering this profession. <br><br>
+
+                                 Throughout this course you will learn the key aspects to data analysis. You will begin to explore the fundamentals of gathering data, and learning how to identify your data sources. You will then learn how to clean, analyze, and share your data with the use of visualizations and dashboard tools. This all comes together in the final project where it will test your knowledge of the course material, explore what it means to be a Data Analyst, and provide a real-world scenario of data analysis. <br><br>
+
+                                 This course does not require any prior data analysis, spreadsheet, or computer science experience. All you need to get started is basic computer literacy,<br> high school level math, and access to a modern web browser such as Chrome or Firefox. <br><br>
+                             </div>
+                        </div>
+                    </div><hr style="color: lightgray;">
+                    <h3 class="bold" style="color:#0062e4; font-weight: bold; font-size: 22px;" >Python for Data Science, Al & Development </h3>  
+                    <div class="pt-3">
+                        <img src="../star.PNG" alt="">
+                        <span style="font-weight: bold; font-size: 20px;">4.6</span>
+                        <span style="padding-left: 10px;">22,695 ratings</span>
+                        <span style="padding-left: 10px;">3,725reviews</span>
+
+                        <div style="color: #373a3c; font-size: 14px; font-weight: 400;">
+                            Kickstart your learning of Python for data science, as well as programming in general, with this beginner-friendly introduction to Python. Python<br> is one of the world’s most popular programming languages, and there has never been greater demand for professionals with the ability to<br> apply Python fundamentals to drive business solutions across industries.<br>
+
+                             <a href="#" data-toggle="collapse" data-target="#demo" style="font-weight: bold;">SHOW ALL</a>
+                             <div id="demo" class="collapse">
+                                This course will take you from zero to programming in Python in a matter of hours—no prior programming experience necessary! You will learn<br> Python fundamentals, including data structures and data analysis, complete hands-on exercises throughout the course modules, and create a<br> final project to demonstrate your new skills. 
+
+                                By the end of this course, you’ll feel comfortable creating basic programs, working with data, and solving real-world problems in Python. You’ll<br> gain a strong foundation for more advanced learning in the field, and develop skills to help advance your career.<br> 
+                                
+                                This course can be applied to multiple Specialization or Professional Certificate programs. Completing this course will count towards your<br>learning in any of the following programs:<br> 
+                                
+                                IBM Applied AI Professional Certificate 
+                                
+                                Applied Data Science Specialization 
+                                
+                                IBM Data Science Professional Certificate 
+                                
+                                Upon completion of any of the above programs, in addition to earning a Specialization completion certificate from Coursera, you’ll also receiv<br>> a digital badge from IBM recognizing your expertise in the field.
+                                 <br><br>
+                             </div>
+                        </div>
+                    </div><hr style="color: lightgray;">
+                
+                    <div style="text-align: center;">
+                        <button style="background-color: blue; color: white; font-weight: bold; height: 50px; width: 150px; border: none; border-radius: 3px;">Show More</button>
+                    </div>
+                    
+                </div>
+    </main> <hr style="color: rgb(168, 134, 134);">
+
+    <main class="container">
+        <h3 style="font-size: 24px; font-weight: 600;">Instructors</h3><br><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <div style="display: flex;">
+                    <img src="../rav1.jpg" alt="" style="border-radius: 100%;">
+                    <div style="padding-left: 40px;">
+                        <a href="#" class="rav">Rav Ahuja</a> <br>
+                        <span style="font-size: 14px ;">Global Program Director</span><br>
+                        <span style="color: #936D48; font-size: 12px;">IBM Skills Network</span>
+                        <div>
+                            <img src="../SvgMembers.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">793,663</span>
+                            <span style="font-size: 12px;">Learners</span>
+                        </div>
+                        <div>
+                            <img src="../SvgBook.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">28</span>
+                            <span style="font-size: 12px;">Courses</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; padding-top: 40px;">
+                    <img src="../rav2.jpg" alt="" style="border-radius: 100%;">
+                    <div style="padding-left: 40px;">
+                        <a href="#" class="rav">Steve Ryan</a> <br>
+                        <span style="font-size: 14px ;">Instructor & Content Developer</span><br>
+                        <span style="color: #936D48; font-size: 12px;">Skill-Up Technologies</span>
+                        <div>
+                            <img src="../SvgMembers.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">56,774</span>
+                            <span style="font-size: 12px;">Learners</span>
+                        </div>
+                        <div>
+                            <img src="../SvgBook.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">5</span>
+                            <span style="font-size: 12px;">Courses</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; padding-top: 40px;">
+                    <img src="../rav3.jpg" alt="" style="border-radius: 100%;">
+                    <div style="padding-left: 40px;">
+                        <a href="#" class="rav">Joseph Santarcangelo</a> <br>
+                        <span style="font-size: 14px ;">Ph.D. Data Scientist at IBM</span><br>
+                        <span style="color: #936D48; font-size: 12px;">IBM Developer Skills Network</span>
+                        <div>
+                            <img src="../SvgMembers.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">541,205</span>
+                            <span style="font-size: 12px;">Learners</span>
+                        </div>
+                        <div>
+                            <img src="../SvgBook.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">22</span>
+                            <span style="font-size: 12px;">Courses</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; padding-top: 40px;">
+                    <img src="../rav4.jpg" alt="" style="border-radius: 100%;">
+                    <div style="padding-left: 40px;">
+                        <a href="#" class="rav">Hima Vasudevan</a> <br>
+                        <span style="font-size: 14px ;">Data Scientist</span><br>
+                        <span style="color: #936D48; font-size: 12px;">IBM</span>
+                        <div>
+                            <img src="../SvgMembers.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">210,371</span>
+                            <span style="font-size: 12px;">Learners</span>
+                        </div>
+                        <div>
+                            <img src="../SvgBook.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">4</span>
+                            <span style="font-size: 12px;">Courses</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; padding-top: 40px;">
+                    <img src="../rav5.jpg" alt="" style="border-radius: 100%;">
+                    <div style="padding-left: 40px;">
+                        <a href="#" class="rav">Ramesh Sannareddy</a> <br>
+                        <span style="font-size: 14px ;">Data Engineering Subject Matter Expert</span><br>
+                        <span style="color: #936D48; font-size: 12px;">Skill-Up Technologies</span>
+                        <div>
+                            <img src="../SvgMembers.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">17,793</span>
+                            <span style="font-size: 12px;">Learners</span>
+                        </div>
+                        <div>
+                            <img src="../SvgBook.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">10</span>
+                            <span style="font-size: 12px;">Courses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div style="display: flex;">
+                    <img src="../rav6.jpg" alt="" style="border-radius: 100%;">
+                    <div style="padding-left: 40px;">
+                        <a href="#" class="rav">Sandip Saha Joy</a> <br>
+                        <span style="font-size: 14px ;">Data Scientist</span><br>
+                        <span style="color: #936D48; font-size: 12px;">IBM</span>
+                        <div>
+                            <img src="../SvgMembers.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">57,707</span>
+                            <span style="font-size: 12px;">Learners</span>
+                        </div>
+                        <div>
+                            <img src="../SvgBook.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">5</span>
+                            <span style="font-size: 12px;">Courses</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; padding-top: 40px;">
+                    <img src="../rav7.jpg" alt="" style="border-radius: 100%;">
+                    <div style="padding-left: 40px;">
+                        <a href="#" class="rav">Kevin McFaul</a> <br>
+                        <span style="font-size: 14px ;">Global Product Management</span><br>
+                        <span style="color: #936D48; font-size: 12px;">IBM Analytics and AI Applications</span>
+                        <div>
+                            <img src="../SvgMembers.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">22,923</span>
+                            <span style="font-size: 12px;">Learners</span>
+                        </div>
+                        <div>
+                            <img src="../SvgBook.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">2</span>
+                            <span style="font-size: 12px;">Courses</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; padding-top: 40px;">
+                    <img src="../rav8.jpg" alt="" style="border-radius: 100%;">
+                    <div style="padding-left: 40px;">
+                        <a href="#" class="rav">Azim Hirjani</a> <br>
+                        <span style="font-size: 14px ;">Cognitive Data Scientist</span><br>
+                        <span style="color: #936D48; font-size: 12px;"></span>
+                        <div>
+                            <img src="../SvgMembers.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">31,369</span>
+                            <span style="font-size: 12px;">Learners</span>
+                        </div>
+                        <div>
+                            <img src="../SvgBook.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">1</span>
+                            <span style="font-size: 12px;">Courses</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; padding-top: 40px;">
+                    <img src="../rav9.jpg" alt="" style="border-radius: 100%;">
+                    <div style="padding-left: 40px;">
+                        <a href="#" class="rav">Saishruthi Swaminathan</a> <br>
+                        <span style="font-size: 14px ;">Data Scientist and Developer Advocate</span><br>
+                        <span style="color: #936D48; font-size: 12px;">IBM CODIAT</span>
+                        <div>
+                            <img src="../SvgMembers.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">130,092</span>
+                            <span style="font-size: 12px;">Learners</span>
+                        </div>
+                        <div>
+                            <img src="../SvgBook.png" alt="">
+                            <span style="font-weight: bold; font-size: 12px; padding-left: 5px;">2</span>
+                            <span style="font-size: 12px;">Courses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="container pt-5">
+        <h4 style="font-size: 24px; font-weight: 600; padding-top: 5%;">Offered by</h4>
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="../IBM-Logo.png" alt="">
+            </div>
+            <div class="col-sm-10">
+                <h3 style="font-weight: 600; font-size: 24px;" class="font1">IBM</h3>
+                <div>
+                    IBM is the global leader in business transformation through <br>
+                     an open hybrid cloud platform and AI, serving clients in more <br>
+                      than 170 countries around the world. Today 47 of the Fortune <br>
+                       50 Companies rely on the IBM Cloud to run their business, <br>
+                        and IBM Watson enterprise AI is hard at work in more than <br>
+                         30,000 engagements. IBM is also one of the world’s most vital <br>
+                          corporate research organizations, with 28 consecutive years <br>
+                           of patent leadership. Above all, guided by principles for trust <br>
+                            and transparency and support for a more inclusive society, <br>
+
+    
+                                 <a href="#" data-toggle="collapse" data-target="#demo" style="font-weight: bold;">SHOW ALL</a>
+                                 <div id="demo" class="collapse">
+                                    IBM is committed to being a responsible technology <br> innovator and a force for good in the world. <br>
+
+                                    For more information about IBM visit: www.ibm.com
+                                 </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="container pt-5">
+        <div class="row pt-5">
+            <div class="col-sm-6 pt-5">
+                <h3 style="font-size: 24px; font-weight: 600;">Start Learning Today</h3>
+                <div style="padding-top: 10px;">
+                    <div>
+                        <i class="fa fa-check" style="color: blue;"></i>
+                        <span style="font-size: 18px; font-weight: 400; padding-left: 25px;">Taught by top companies and universities</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-check" style="color: blue; padding-top: 10px;"></i>
+                        <span style="font-size: 18px; font-weight: 400; padding-left: 25px;">Affordable programs</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-check" style="color: blue; padding-top: 10px;"></i>
+                        <span style="font-size: 18px; font-weight: 400; padding-left: 25px;">Apply your skills with hands-on projects</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-check" style="color: blue; padding-top: 10px;"></i>
+                        <span style="font-size: 18px; font-weight: 400; padding-left: 25px;">Learn on your own schedule</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-check" style="color: blue; padding-top: 10px;"></i>
+                        <span style="font-size: 18px; font-weight: 400; padding-left: 25px;">Course videos and readings</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-check" style="color: blue; padding-top: 10px;"></i>
+                        <span style="font-size: 18px; font-weight: 400; padding-left: 25px;">Graded quizzes and assignments</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-check" style="color: blue; padding-top: 10px;"></i>
+                        <span style="font-size: 18px; font-weight: 400; padding-left: 25px;">No degree or experience required for many programs</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-check" style="color: blue; padding-top: 10px;"></i>
+                        <span style="font-size: 18px; font-weight: 400; padding-left: 25px;">Shareable Certificate upon completion</span>
+                    </div>
+
+                    <div>
+                        <button style="width: 160px; margin-top: 30px; height: 60px; background-color: #2A73CC; color: white; font-weight: bold; font-size: 16px; border: none; border-radius: 3px;">Enroll for Free <br> <span>Starts Sep 7</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 pt-5">
+                <div class="pl-3">
+                    <span style="font-size: 18px;">Shareable on</span>
+                    <img src="../you2.PNG" alt="">
+                </div>
+                <div class="pt-3">
+                    <img src="../you1.PNG" alt="">
+                </div>
+                <div class="pt-4">
+                    <span>
+                        You can share your Certificate in the Certifications section of <br>
+                         your LinkedIn profile, on printed resumes, CVs, or other <br> documents.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main style="background-color: rgb(245,245,245);">
+        <div class="lis container mt-5 pt-5 d-flex justify-content-between">
+            <ul>
+                <h4 style="font-size: 20px; font-weight: 600;">
+                    Start or advance your career
+                </h4>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Google Data Analyst
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Google Project Management
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Google UX Design
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Google IT Support
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    IBM Data Science
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    IBM Data Analyst
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    IBM Data Analytics with Excel and R
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    IBM Cybersercurity Analyst
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Facebook Social Media Marketing
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    IBM Full Stack Cloud Developer
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Salesforce Sales Development <br> Representative
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Salesforce Sales Operations
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Supporte de Technologias de la information <br>de Google
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Google IT Automation with Python
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Deeplearning.AI Tensorflow
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Popular Cybersercurity Certificates
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Popular SQL Certificates
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Popular IT Certificates
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    See all Certificates
+                </li>
+            </ul>
+            <ul>
+                <h4 style="font-size: 20px; font-weight: 600;">
+                    Browse popular topics
+                </h4>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    free courses
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    learn a language
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    python
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Java
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    web design
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    SQL
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Cursor Gratis
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Microsoft Excel
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Project Management
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Cybersercurity
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Human Resource
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Data Science Free Courses
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Speaking English
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    content Writing
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Full Stack Web Development
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Artificate intelligence
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    C programming
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Communication skill
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    BlockChain
+                </li>
+                <li>
+                    see all courses
+                </li>
+            </ul>
+            <ul>
+                <h4 style="font-size: 20px; font-weight: 600;">
+                    Upskill your team
+                </h4>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    skill for data science team
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Data Driven Decision Making
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Software Engineering skill
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    soft skill for Engineering team
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Management skill
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Marketing skill
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Skill for sales Teams
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Product Manager skill
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    skill for finance
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Android Development project
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Tensorflow and keras project
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    python for everybody
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Deep Learning
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Excel skill for business
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Business Foundation
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Machine Learning
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    AWS Fundaments
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Data Engineering Foundations
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Data Analyst skill
+                </li>
+                <li>
+                    skill for UX Designers
+                </li>
+            </ul>
+            <ul>
+                <h4 style="font-size: 20px; font-weight: 600;">
+                    Earn a degree or Certificates <br> online
+                </h4>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    MasterTrack Certificates
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Professional Certificates
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    University Certificates
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    MBA & Business Degrees
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Data Science Degree
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Computer Science Degrees
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Data Analytics Degrees
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Public Health Degrees
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Social science Degrees
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Management Degrees
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Degrees from top European<br>Universities
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Master's Degrees
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Bachelor's Degrees
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    Degrees with a Performance Pathway
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    BSC courses
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    What is a Bachelor's Degrees
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    How long does a master's Degrees<br>take?
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    is an online MBA worth it?
+                </li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                    7 Way to pay for Graduates school
+                </li>
+                <li>
+                    see all Degrees
+                </li>
+            </ul>
+
+        </div>
+        <div class="lis container mt-5 pt-5 d-flex justify-content-between">
+            <ul>
+                <h4 style="font-size: 20px; font-weight: 600;">Coursera</h4>
+
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">About</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">What We Offer</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Leadership</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Careers</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Catalog</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Coursera Plus</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Professional Certificates</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">MasterTrack® Certificates</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Degrees</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">For Enterprise</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">For Government</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">For Campus</li>
+            </ul>
+            <ul>
+                <h4 style="font-size: 20px; font-weight: 600; padding-bottom: 10px;">Community</h4>
+
+
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Learners</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Partners</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Developers</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Beta Testers</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Translators</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Blog</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Tech Blog</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Teaching Center</li>
+            </ul>
+            <ul>
+                <h4 style="font-size: 20px; font-weight: 600;">More</h4>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Press</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Investors</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Terms</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Privacy</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Help</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Accessibility</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Contact</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Articles</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Directory</li>
+                <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Affiliates</li>
+            </ul>
+            <ul>
+                <li><img src="../store1.PNG" alt=""></li>
+                <li><img src="../store2 - Copy.PNG" alt=""></li>
+                <li><img src="../store3.PNG" alt=""></li>
+            </ul>
+        </div>
+        <hr style="color: lightgray;margin-left: 90px;margin-right: 90px;">
+    </main>
+    <footer>
+        <div style="font-size: 12px;padding-bottom: 20px;background-color: #F5F5F5;">
+            © 2021 Coursera Inc. All rights reserved. 
+    </div>
+    </footer>
+     
+     
+     <div class="logo" style=" text-align: right;margin-right: 95px;justify-content: space-around;padding-bottom: 100px;">
+         <img src="../facebook.png">
+         <img src="../linkedin.png">
+         <img src="../twitter.png">
+         <img src="../youtube.png">
+         <img  src="../instagram.png">
+     </div>
+    </div>
+</body>
+
+</html>

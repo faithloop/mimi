@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="project2/small.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    </head>
+
+<style>
+
+  .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .hmm {
+        height: 30px;
+        background-color: blue;
+        width: 40px;
+        margin-left: -7px;
+        color: blue;
+    }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+      }
+      .dropbtn {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        height: 45px;
+      }
+      .about1:hover{
+        color: #014c8c;
+        text-decoration: underline;
+      }
+      #place{
+        background: url(../snap.PNG);
+        background-size: cover;
+      }
+      #nav2{
+        display: none !important;
+      }
+      .about:hover{
+        text-decoration: underline;
+        color: #2a73cc;
+        cursor: progress;
+      }
+      .browse:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      @media (max-width:760px) {
+          #nav2{
+            display: block !important;
+            display: flex !important;
+          }
+          #nav1{
+            display: none !important;
+          }
+      }
+        @media (max-width:760px) {
+         
+            #flex{
+                overflow-x: scroll;
+            }  
+            #para{
+                font-size: 13px !important;
+                font-weight: 600 !important;
+                width: 90%;
+                text-align: center;
+            }
+            #filter{
+                display: none !important;
+            }
+            .total{
+                font-size: 10px !important;
+            }
+            .text-n{
+                font-size: 10px;
+            }
+            .al{
+                width: 80%;
+                padding-left: 0;
+            }
+            .s-flex{
+                flex-direction: column;
+            }
+
+        }
+
+            </style>
+            <body>
+            <nav class="d-flex justify-content-between container pt-2" id="nav2">
+        <div>
+          <i class="fa fa-bars"></i>
+        </div>
+        <div>
+          <span style="color: blue; font-weight: bold; font-size: 27px;">coursera</span>
+        </div>
+        <div>
+          <i class="fa fa-search"></i>
+        </div>
+      </nav>
+  
+      <main class="navbar" id="nav1">
+        <div class="d-flex">
+          <div>
+            <span style="font-size: 30px; font-weight: bold; color: blue" class="mx-4"
+              >coursera</span>
+          </div>
+          <div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Explore <i class="fa fa-angle-down"></i>
+              </button>
+              <div>
+                <div
+                  class="dropdown-content"
+                  style="width: 300px; height: 600px; overflow-y: scroll"
+                >
+                  <div>
+                    <div>
+                      <h5 style="padding-left: 15px">Goals</h5>
+                      <a href="#"
+                        >Take a free course
+                        <i class="fa fa-chevron-right pl-5 ml-5"></i
+                      ></a>
+                      <a href="#"
+                        >Earn a Degree
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 120px"
+                        ></i>
+                      </a>
+                      <a href="#"
+                        >Earn Certificate
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 110px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Launch or advance your career
+                        <i class="fa fa-chevron-right"></i
+                      ></a>
+                    </div>
+  
+                    <div>
+                      <h5 style="padding-left: 15px">Subjects</h5>
+                      <a href="#"
+                        >Data Science
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 120px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Business
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 150px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Computer Science
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 80px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Information Technology
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 35px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Language Learning
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 70px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Health
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 160px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Personal Development
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 50px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Physical Science and Engineering
+                        <i class="fa fa-chevron-right"></i
+                      ></a>
+                      <a href="#"
+                        >Social Sciences
+                        <i class="fa fa-chevron-right pl-5 ml-5"></i
+                      ></a>
+                      <a href="#"
+                        >Arts and Humanities
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 60px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Math and Logic
+                        <i class="fa fa-chevron-right pl-5 ml-5"></i
+                      ></a>
+                      <button
+                        style="
+                          border: 1px solid blue;
+                          background-color: transparent;
+                          width: 200px;
+                          color: blue;
+                          margin-left: 20px;
+                        "
+                      >
+                        Browse all Subjects
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="mx-4" >
+              <input type="text" placeholder="vue" style="width: 80%;" >
+              <button class="hmm" style="border: none;">
+                <i class="fa fa-search text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div >
+            <span class="mr-5 ml-5" >For Enterprise </span>
+            <span class="mr-5" style="margin-left: 30px;" > For students</span>
+          </div>
+        </div>
+        <div class="mr-5 ml-5" >
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            class="loop"
+          >
+            Log in
+          </a>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body container">
+                  <div class="container">
+                    <h3
+                      style="
+                        font-weight: 400;
+                        font-size: 35px;
+                        text-align: center;
+                      "
+                    >
+                      Welcome back
+                    </h3>
+                    <div>
+                      <label style="font-weight: 700; font-size: 13px"
+                        >EMAIL</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="name@email.com"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <div class="mt-3">
+                      <label style="font-weight: 700; font-size: 13px"
+                        >PASSWORD</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="Enter your password"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <a href="#" style="text-decoration: none">Forget password?</a
+                    ><br /><br /><br />
+                    <div>
+                      <button
+                        style="
+                          background-color: rgb(0, 86, 210);
+                          color: white;
+                          font-weight: 400;
+                          border: none;
+                          border-radius: 5px;
+                          width: 90%;
+                          height: 50px;
+                        "
+                      >
+                        Login
+                      </button>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                      <hr width="40%" />
+                      <span style="padding-left: 15px; padding-right: 15px"
+                        >or</span
+                      >
+                      <hr width="40%" />
+                    </div>
+                    <div class="mt-2">
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img src="../loe1.PNG" /> Continue with Google</button
+                      ><br /><br />
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img src="../loe2.PNG" />Continue with Facebook</button
+                      ><br /><br />
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img
+                          src="../loe3.PNG"
+                          style="padding-left: 100px"
+                        />Continue with Apple
+                      </button>
+                    </div>
+                    <div style="text-align: center">
+                      <span>New to Coursera?</span>
+                      <a href="#" style="text-decoration: none">Sign up</a>
+                    </div>
+                    <hr />
+                    <div style="text-align: center">
+                      <a href="#" style="text-decoration: none"
+                        >Log in with your organization</a
+                      >
+                    </div>
+                    <br />
+                    <div style="text-align: center">
+                      <span>Having trouble logging in?</span>
+                      <a href="#" style="color: black">Learner help center</a>
+                    </div>
+                    <br />
+                    <div style="text-align: center">
+                      <span
+                        >This site is protected by reCAPTCHA Enterprise and <br />
+                        the Google</span
+                      >
+                      <a href="#" style="color: black">Privacy Policy.</a>
+                      <span>and</span>
+                      <a href="#" style="color: black">Terms and Service</a>
+                      <span>apply.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Join for Free
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body container">
+                  <div class="container">
+                    <h3
+                      style="
+                        font-weight: 400;
+                        font-size: 35px;
+                        text-align: center;
+                      "
+                    >
+                      Sign up
+                    </h3>
+                    <div>
+                      <label style="font-weight: 700; font-size: 13px"
+                        >FULL NAME</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="Enter your name"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <div class="mt-3">
+                      <label style="font-weight: 700; font-size: 13px"
+                        >EMAIL</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="name@email.com"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <div class="mt-3">
+                      <label style="font-weight: 700; font-size: 13px"
+                        >PASSWORD</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="create your password"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <span>Between 8 and 72 characters</span><br /><br />
+                    <div>
+                      <button
+                        style="
+                          background-color: rgb(0, 86, 210);
+                          color: white;
+                          font-weight: 400;
+                          border: none;
+                          border-radius: 5px;
+                          width: 90%;
+                          height: 50px;
+                        "
+                      >
+                        Join for Free
+                      </button>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                      <hr width="40%" />
+                      <span style="padding-left: 15px; padding-right: 15px"
+                        >or</span
+                      >
+                      <hr width="40%" />
+                    </div>
+                    <div class="mt-2">
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img src="../loe1.PNG" style="padding-right: 135px" />
+                        Continue with Google</button
+                      ><br /><br />
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img
+                          src="../loe2.PNG"
+                          style="padding-right: 135px"
+                        />Continue with Facebook</button
+                      ><br /><br />
+                    </div>
+                    <div style="text-align: center">
+                      <span>New to Coursera?</span>
+                      <a href="#" style="text-decoration: none">Sign up</a>
+                    </div>
+                    <hr />
+                    <div style="text-align: center">
+                      <a href="#" style="text-decoration: none"
+                        >Log in with your organization</a
+                      >
+                    </div>
+                    <br />
+                    <div style="text-align: center; font-size: 12px">
+                      <span>I agree Coursera's</span>
+                      <a href="#" style="color: black">Terms of use </a>
+                      <span>and</span>
+                      <a href="#" style="color: black">Privacy Notice</a><br />
+                      <span>Having trouble logging in?</span>
+                      <a href="#" style="color: black">Learner help center</a>
+                    </div>
+                    <br />
+                    <div style="text-align: center; font-size: 12px">
+                      <span
+                        >This site is protected by reCAPTCHA Enterprise and <br />
+                        the Google</span
+                      >
+                      <a href="#" style="color: black">Privacy Policy.</a>
+                      <span>and</span>
+                      <a href="#" style="color: black">Terms and Service</a>
+                      <span>apply.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="mop d-flex justify-content-center pt-4" id="">
+        <div class="d-flex justify-content-between">
+            <div class="myMum">
+                <span class="myMum1">
+                    Build job-Ready skill to stand out in your job search with a 
+                   <b>
+                       <u>
+                        career credential from Google
+                       </u>
+                   </b>
+                </span>
+            </div>
+            <div>
+                <img src="../icon.PNG" style="margin-top: -10px;">
+            </div>
+        </div>
+                
+            </div>
+            <div class="container">
+                <div class="row pt-4">
+                    <div class="col-sm-8 pt-5">
+                        <div>
+                            <h1 id="learn">Learn Without Limits</h1>
+                            <h6 class="txt-cont">Build skills with courses, certificates, and degrees online from world-class universities and companies.</h6>
+                        </div>
+                       
+                        <div class="pt-3">
+                            <button class="btn btn-md btn-outline-primary butt1" style="background-color: #0056D2;">Join for free</button>
+                            <button class="btn btn-md btn-outline-primary butt2" style="border-radius: 5px; border: 2px solid #0056D2; color: #0056D2;">Try Coursera for Business</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 lone">
+                        <img src="coursea.png" alt="" id="coursea-img">
+                    </div>
+        
+                </div>
+        
+            </div>
+            <div style="background-color: rgb(245,245,245); height:100%; margin-top: 70px;">
+                <div class="container">
+                    <div class="boss">
+                            <div class="boss1">
+                                <span>We collaborate with <span style="color:blue">200+leading Unversities and Companies</span></span>
+                            </div>
+                    </div>
+                    <div class="container container-f" style="justify-content: space-between;margin-left: 30px;">
+                        <div class="row">
+                            <div class="col-sm-2">
+                              <img src="../illinois.png" >
+                              
+                            </div>
+                            <div class="col-sm-1"style="margin-left:10px;">
+                                <img src="../duke_updated_2020.png" >
+                            </div>
+                            <div class="col-sm-1"style="margin-left:30px;">
+                               <img src="../google.png">
+                            </div>
+                            <div class="col-sm-1"style="margin-left:35px;">
+                                <img src="../umich.jpg">
+                           </div>
+                           <div class="col-sm-1">
+                             <img src="../IBM.PNG">
+                           </div>
+                           <div class="col-sm-1">
+                            <img src="../imperial.png"style="margin-left:20px;">
+                           </div>
+                           <div class="col-sm-1">
+                             <img src="../stanford.png"style="margin-left: 90px;">
+                           </div>
+                           <div class="col-sm-1">
+                             <img src="../penn.png "style="margin-left: 160px;">
+                           </div>
+        
+                        </div>
+                        
+                    </div>
+        
+                </div>
+        
+            </div>
+            <div class="container">
+                <h5 class="prof">Professional Certificates</h5>
+            </div>
+            <div class="brk-cont">
+                <h1 class="getJob">Get job-Ready for an in-demand Career</h1>
+                <h5 class="brk">Break into a new field like information technology or data science.No prior experience necessary to get
+                    started.</h5>
+            </div>
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div>
+                            <div class="d-flex justify-content-around" style="flex-wrap: wraps;">
+                                <a href="#">
+                                    <div class="box"><img src="../see.PNG" alt="..."></div>
+                                </a>
+                                <a href="#">
+                                    <div class="box"><img src="../see1.PNG" alt="..."></div>
+                                </a>
+                                <a href="#">
+                                    <div class="box"><img src="../see3.PNG" alt="..."></div>
+                                </a>
+                                <a href="#">
+                                    <div class="box"><img src="../see5.PNG" alt="..."></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-around" style="flex-wrap: wraps;">
+                            <a href="#">
+                                <div class="box"><img src="../see6.PNG" alt="..."></div>
+                            </a>
+                            <a href="#">
+                                <div class="box"><img src="../see8.PNG" alt="..."></div>
+                            </a>
+                            <a href="#">
+                                <div class="box"><img src="../see9.PNG" alt="..."></div>
+                            </a>
+                            <a href="#">
+                                <div class="box"><img src="../picture.PNG" alt=".."></div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div style="text-align: center;font-size:bold; ">
+                <h5 style="color: blue; font-size: 16px; font-weight: bold;">Explore Certificates <i
+                        class="fa fa-arrow-right"></i></h5>
+            </div>
+            <div style="color:rgb(56,45,153); font-size: 16px; font-weight: bold;">
+                Master's and Bachelor's degrees
+            </div>
+            <br>
+            <div>
+                <h3 style="font-size: 40px; font-weight: 400;">Find a top degrees that fits your life</h3>
+            </div>
+            <br>
+            <div>
+                <h5 style="font-weight: 400; font-size: 20px;">Breakthrough pricing on 100% online degrees from top universities
+                </h5>
+            </div>
+            <div id="carouselExampleControlsNoTouching1" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div>
+                            <div class="d-flex justify-content-around" style="flex-wrap: wraps;">
+                                <a href="#">
+                                    <div class="box"><img src="../me.PNG" alt="..."></div>
+                                </a>
+                                <a href="#">
+                                    <div class="box"><img src="../me1.PNG" alt="..."></div>
+                                </a>
+                                <a href="#">
+                                    <div class="box"><img src="../car3.PNG" alt="..."></div>
+                                </a>
+                                <a href="#">
+                                    <div class="box"><img src="../me2.PNG" alt="..."></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-around" style="flex-wrap: wraps;">
+                            <a href="#">
+                                <div class="box"><img src="../data.PNG" alt="..."></div>
+                            </a>
+                            <a href="#">
+                                <div class="box"><img src="../data1.PNG" alt="..."></div>
+                            </a>
+                            <a href="#">
+                                <div class="box"><img src="../data2.PNG" alt="..."></div>
+                            </a>
+                            <a href="#">
+                                <div class="box"><img src="../car.PNG" alt=".."></div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        
+           
+            <div style="text-align: center;font-size:bold; ">
+                <h5 style="color: blue; font-size: 16px; font-weight: bold;">Explore Degrees <i class="fa fa-arrow-right"></i>
+                </h5>
+            </div>
+            <div style="color: rgb(56,45,153); font-size: 16px; font-weight: bold;">
+                Courses and specializations
+            </div>
+            <br>
+            <div>
+                <h3 style="font-size: 40px; font-weight: 400;">Courses you can Complete in a Day</h3>
+                <h5 style="font-weight: 400; font-size: 20px;">Over 4,000 Courses in Topics like business analytics,graphic
+                    design,python, and more.</h5>
+            </div>
+            <div style="text-align: center;">
+                <h5 style="color: blue; font-size: 16px; font-weight: bold;">Explore Free Courses <i
+                        class="fa fa-arrow-right"></i></h5>
+            </div>
+            <div>
+                <h1 style="font-weight:inherit;font-size: 40px;font-style: normal;">Explore Coursera</h1>
+            </div>
+            <div class="cardss">
+                <div class="four" style="display: flex;">
+                    <div>
+                        <img src="../tea1.PNG" alt="" height="70px">
+                    </div>
+                    <div>
+                        <span style="font-weight:bold ;">Data science</span><br>
+                        <span>425 Courses</span>
+        
+                    </div>
+                </div>
+                <div class="four" style="display: flex;">
+                    <div>
+                        <img src="../tea2.PNG" height="70px">
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">Business</span><br>
+                        <span>1095 courses</span>
+                    </div>
+                </div>
+                <div class="four" style="display: flex;">
+                    <div>
+                        <img src="../tea3.PNG" alt="" height="100%">
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">Computer Science</span><br>
+                        <span>668 courses</span>
+                    </div>
+                </div>
+                <div class="four" style="display: flex;">
+                    <div>
+                        <img src="../tea4.PNG" alt="" height="100%">
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">Health</span><br>
+                        <span>471 courses</span>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="cards">
+                <div class="four" style="display: flex;">
+                    <div>
+                        <img src="../tea5.PNG" alt="" height="100%">
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">Social Science</span><br>
+                        <span>401 courses</span>
+                    </div>
+                </div>
+                <div class="four" style="display: flex;">
+                    <div>
+                        <img src="../tea6.PNG" alt="" height="100%">
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">Personal Development</span><br>
+                        <span>137 courses</span>
+                    </div>
+                </div>
+                <div class="four" style="display: flex;">
+                    <div>
+                        <img src="../tea7.PNG" alt="" height="100%">
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">Arts and Humanities</span><br>
+                        <span>338 courses</span>
+                    </div>
+                </div>
+                <div class="four" style="display: flex;">
+                    <div>
+                        <img src="../tea8.PNG" alt="" height="100%">
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">Physical Science and Engineering</span><br>
+                        <span>413 courses</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cardsss">
+                <div class="four" style="margin-right: 48px; display: flex;">
+                    <div>
+                        <img src="../tea9.PNG" alt="" height="100%">
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">Language Learning</span><br>
+                        <span>150 courses</span>
+                    </div>
+                </div>
+                <div class="four" style="margin-right:50px; display: flex;">
+                    <div>
+                        <img src="../tea10.PNG" alt="" height="100%">
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">Information Technology</span><br>
+                        <span>145 courses</span>
+                    </div>
+                </div>
+                <div class="four" style="display: flex;">
+                    <div>
+                        <img src="../tea11.PNG" alt="" height="100%">
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">Math and Logic</span><br>
+                        <span>70 courses</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div style="background-color: #EBF3FF;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 out1">
+                            <img src="../out1.png" class="out">
+                        </div>
+                        <div class="col-sm-6 pl-5" style="padding-top: 150px;">
+                            <h2 style="font-size: 38px; font-weight: 400;">Learner outcomes on Coursera</h2><br>
+                            <div>
+                                <span style="font-weight: bold; font-size: 20px;">87% of people learning</span>
+                                <span style="font-size: 20px;">for professional development</span><br>
+                                <span style="font-weight: bold; font-size: 20px;">report career benefits</span>
+                                <span style="font-size: 20px;">like getting a promotion, a <br> raise, or starting a new
+                                    career</span>
+                            </div><br>
+                            <div>
+                                <li style="list-style: square; font-weight: bold;">Coursera Impact Report (2020)</li>
+                                <button style="background-color: rgb(0,86,210); color: white; width: 150px; font-weight: bold; outline: none
+                                ; margin-top: 20px; height: 50px; border: none; border-radius: 3px;">Join for Free</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 style="text-align: center;margin-top: 70px;">From the Coursera community</h1>
+            </div>
+            <div>
+                <p style="font-size: 30px;;text-align: center;">77+ million people are already learning on Coursera</p>
+            </div>
+        
+        
+        <div class="pple1">
+            <div class="pple" >
+                <div class="box"><img src="../desk.PNG" id= box alt="..."></div>
+                <div class="box"><img src="../desk1.PNG" id= box1 alt="..."></div>
+                <div class="box"><img src="../desk3.PNG" id= box1 alt="..."></div>
+            </div>
+        </div>
+            
+            <main style="background-color:rgb(249,247,239); margin-top: 220px; padding-top: 80px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6" style="text-align: center;">
+                            <h1>Coursera for Business</h1>
+                            <h5>We’ve got the solution: world-class training and
+                                development programs developed by top<br>
+                                universities and companies. All on Coursera for<br>
+                                Business.</h5>
+                            <button
+                                style="color:blue;width:180px;height:50px;border: 2px solid blue;background-color: transparent;font-weight: bold;border-radius: 5px;">coursera
+                                Enterprise</button>
+                            <button
+                                style="color:blue;width:180px;height:50px;border: 2px solid blue;background-color: transparent;font-weight: bold;border-radius: 5px;margin-left: 15px;">Coursera
+                                for Teams</button>
+        
+                        </div>
+                        <div class="col-sm-6" style="text-align: center;color:darkblue">
+                            <h5>Thousands of institutions use coursera's enterprise offering.</h5>
+                            <img src="../lap.PNG" class="img-lap">
+        
+                        </div>
+        
+                    </div>
+                </div>
+            </main>
+            <nav style="padding-top: 60px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="../Image-Next-Step.png" class="img-next">
+                        </div>
+                        <div class="col-sm-6 pl-5">
+                            <h1 style="padding-top: 45px;">Take the next step toward your personal and professional
+                                goals<br> with Coursera.</h1>
+                                <div>
+                                    <span style="padding-top: 20px;font-size: 20px;">Join now to receive personalized recommendations<br>
+                                        from the full Coursera catalog.</span>
+                                </div>
+                                <div class="mt-3">
+                                    <button class="btn btn-md btn-outline-primary butt1">Join for Free</button>
+                                </div>    
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+            <main style="background-color: rgb(245,245,245);">
+                <div class=" media container mt-5 pt-5 d-flex justify-content-between">
+                    <ul>
+                        <h4 style="font-size: 20px; font-weight: 600;">
+                            Start or advance your career
+                        </h4>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Google Data Analyst
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Google Project Management
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Google UX Design
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Google IT Support
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            IBM Data Science
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            IBM Data Analyst
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            IBM Data Analytics with Excel and R
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            IBM Cybersercurity Analyst
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Facebook Social Media Marketing
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            IBM Full Stack Cloud Developer
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Salesforce Sales Development <br> Representative
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Salesforce Sales Operations
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Supporte de Technologias de la information <br>de Google
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Google IT Automation with Python
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Deeplearning.AI Tensorflow
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Popular Cybersercurity Certificates
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Popular SQL Certificates
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Popular IT Certificates
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            See all Certificates
+                        </li>
+                    </ul>
+                    <ul>
+                        <h4 style="font-size: 20px; font-weight: 600;">
+                            Browse popular topics
+                        </h4>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            free courses
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            learn a language
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            python
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Java
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            web design
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            SQL
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Cursor Gratis
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Microsoft Excel
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Project Management
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Cybersercurity
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Human Resource
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Data Science Free Courses
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Speaking English
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            content Writing
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Full Stack Web Development
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Artificate intelligence
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            C programming
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Communication skill
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            BlockChain
+                        </li>
+                        <li>
+                            see all courses
+                        </li>
+                    </ul>
+                    <ul>
+                        <h4 style="font-size: 20px; font-weight: 600;">
+                            Upskill your team
+                        </h4>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            skill for data science team
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Data Driven Decision Making
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Software Engineering skill
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            soft skill for Engineering team
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Management skill
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Marketing skill
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Skill for sales Teams
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Product Manager skill
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            skill for finance
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Android Development project
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Tensorflow and keras project
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            python for everybody
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Deep Learning
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Excel skill for business
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Business Foundation
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Machine Learning
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            AWS Fundaments
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Data Engineering Foundations
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Data Analyst skill
+                        </li>
+                        <li>
+                            skill for UX Designers
+                        </li>
+                    </ul>
+                    <ul>
+                        <h4 style="font-size: 20px; font-weight: 600;">
+                            Earn a degree or Certificates <br> online
+                        </h4>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            MasterTrack Certificates
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Professional Certificates
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            University Certificates
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            MBA & Business Degrees
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Data Science Degree
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Computer Science Degrees
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Data Analytics Degrees
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Public Health Degrees
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Social science Degrees
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Management Degrees
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Degrees from top European<br>Universities
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Master's Degrees
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Bachelor's Degrees
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            Degrees with a Performance Pathway
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            BSC courses
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            What is a Bachelor's Degrees
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            How long does a master's Degrees<br>take?
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            is an online MBA worth it?
+                        </li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">
+                            7 Way to pay for Graduates school
+                        </li>
+                        <li>
+                            see all Degrees
+                        </li>
+                    </ul>
+        
+                </div>
+                <div class="media container mt-5 pt-5 d-flex justify-content-between">
+                    <ul>
+                        <h4 style="font-size: 20px; font-weight: 600;">Coursera</h4>
+        
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">About</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">What We Offer</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Leadership</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Careers</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Catalog</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Coursera Plus</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Professional Certificates</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">MasterTrack® Certificates</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Degrees</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">For Enterprise</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">For Government</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">For Campus</li>
+                    </ul>
+                    <ul>
+                        <h4 style="font-size: 20px; font-weight: 600; padding-bottom: 10px;">Community</h4>
+        
+        
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Learners</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Partners</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Developers</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Beta Testers</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Translators</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Blog</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Tech Blog</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Teaching Center</li>
+                    </ul>
+                    <ul>
+                        <h4 style="font-size: 20px; font-weight: 600;">More</h4>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Press</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Investors</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Terms</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Privacy</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Help</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Accessibility</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Contact</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Articles</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Directory</li>
+                        <li style="font-size: 14px; font-weight: 400; padding-bottom: 10px;">Affiliates</li>
+                    </ul>
+                    <ul>
+                        <li><img src="../store1.PNG" alt=""></li>
+                        <li><img src="../store2 - Copy.PNG" alt=""></li>
+                        <li><img src="../store3.PNG" alt=""></li>
+                    </ul>
+                </div>
+            </main>
+        
+        
+        
+        
+        
+        </body>
+        
+        </html>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+            integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+            integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+            crossorigin="anonymous"></script>
+    
+</body>
+</html>

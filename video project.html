@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>last project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="project2/small.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</head>
+<style>
+  #trans:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+   .dropbtn {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        height: 45px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .whole_div {
+        background-color: black;
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .about1:hover{
+        color: #014c8c;
+        text-decoration: underline;
+      }
+      #place{
+        background: url(../snap.PNG);
+        background-size: cover;
+      }
+      #nav2{
+        display: none !important;
+      }
+      #save:hover{
+          background-color: blue;
+      }
+      .about:hover{
+        text-decoration: underline;
+        color: #2a73cc;
+        cursor: progress;
+      }
+      .browse:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      @media (max-width:760px) {
+          #nav2{
+            display: block !important;
+            display: flex !important;
+          }
+          #nav1{
+            display: none !important;
+          }
+      }
+</style>
+
+<body>
+    <nav class="d-flex justify-content-between container pt-2" id="nav2">
+        <div>
+          <i class="fa fa-bars"></i>
+        </div>
+        <div>
+          <span style="color: blue; font-weight: bold; font-size: 27px;">coursera</span>
+        </div>
+        <div>
+          <i class="fa fa-search"></i>
+        </div>
+      </nav>
+  
+      <main class="navbar" id="nav1">
+        <div class="d-flex">
+          <div>
+            <span style="font-size: 30px; font-weight: bold; color: blue" class="mx-4"
+              >coursera</span>
+          </div>
+          <div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Explore <i class="fa fa-angle-down"></i>
+              </button>
+              <div>
+                <div
+                  class="dropdown-content"
+                  style="width: 300px; height: 600px; overflow-y: scroll"
+                >
+                  <div>
+                    <div>
+                      <h5 style="padding-left: 15px">Goals</h5>
+                      <a href="#"
+                        >Take a free course
+                        <i class="fa fa-chevron-right pl-5 ml-5"></i
+                      ></a>
+                      <a href="#"
+                        >Earn a Degree
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 120px"
+                        ></i>
+                      </a>
+                      <a href="#"
+                        >Earn Certificate
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 110px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Launch or advance your career
+                        <i class="fa fa-chevron-right"></i
+                      ></a>
+                    </div>
+  
+                    <div>
+                      <h5 style="padding-left: 15px">Subjects</h5>
+                      <a href="#"
+                        >Data Science
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 120px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Business
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 150px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Computer Science
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 80px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Information Technology
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 35px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Language Learning
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 70px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Health
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 160px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Personal Development
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 50px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Physical Science and Engineering
+                        <i class="fa fa-chevron-right"></i
+                      ></a>
+                      <a href="#"
+                        >Social Sciences
+                        <i class="fa fa-chevron-right pl-5 ml-5"></i
+                      ></a>
+                      <a href="#"
+                        >Arts and Humanities
+                        <i
+                          class="fa fa-chevron-right"
+                          style="padding-left: 60px"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        >Math and Logic
+                        <i class="fa fa-chevron-right pl-5 ml-5"></i
+                      ></a>
+                      <button
+                        style="
+                          border: 1px solid blue;
+                          background-color: transparent;
+                          width: 200px;
+                          color: blue;
+                          margin-left: 20px;
+                        "
+                      >
+                        Browse all Subjects
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="mx-4" >
+              <input type="text" placeholder="search in course" style="width: 80%;" >
+              <button class="hmm" style="border: none;">
+                <i class="fa fa-search text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div >
+            <span class="mr-5 ml-5" >For Enterprise </span>
+            <span class="mr-5" style="margin-left: 30px;" > For students</span>
+          </div>
+        </div>
+        <div class="mr-5 ml-5" >
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            class="loop"
+          >
+            Log in
+          </a>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body container">
+                  <div class="container">
+                    <h3
+                      style="
+                        font-weight: 400;
+                        font-size: 35px;
+                        text-align: center;
+                      "
+                    >
+                      Welcome back
+                    </h3>
+                    <div>
+                      <label style="font-weight: 700; font-size: 13px"
+                        >EMAIL</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="name@email.com"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <div class="mt-3">
+                      <label style="font-weight: 700; font-size: 13px"
+                        >PASSWORD</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="Enter your password"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <a href="#" style="text-decoration: none">Forget password?</a
+                    ><br /><br /><br />
+                    <div>
+                      <button
+                        style="
+                          background-color: rgb(0, 86, 210);
+                          color: white;
+                          font-weight: 400;
+                          border: none;
+                          border-radius: 5px;
+                          width: 90%;
+                          height: 50px;
+                        "
+                      >
+                        Login
+                      </button>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                      <hr width="40%" />
+                      <span style="padding-left: 15px; padding-right: 15px"
+                        >or</span
+                      >
+                      <hr width="40%" />
+                    </div>
+                    <div class="mt-2">
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img src="../loe1.PNG" /> Continue with Google</button
+                      ><br /><br />
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img src="../loe2.PNG" />Continue with Facebook</button
+                      ><br /><br />
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img
+                          src="../loe3.PNG"
+                          style="padding-left: 100px"
+                        />Continue with Apple
+                      </button>
+                    </div>
+                    <div style="text-align: center">
+                      <span>New to Coursera?</span>
+                      <a href="#" style="text-decoration: none">Sign up</a>
+                    </div>
+                    <hr />
+                    <div style="text-align: center">
+                      <a href="#" style="text-decoration: none"
+                        >Log in with your organization</a
+                      >
+                    </div>
+                    <br />
+                    <div style="text-align: center">
+                      <span>Having trouble logging in?</span>
+                      <a href="#" style="color: black">Learner help center</a>
+                    </div>
+                    <br />
+                    <div style="text-align: center">
+                      <span
+                        >This site is protected by reCAPTCHA Enterprise and <br />
+                        the Google</span
+                      >
+                      <a href="#" style="color: black">Privacy Policy.</a>
+                      <span>and</span>
+                      <a href="#" style="color: black">Terms and Service</a>
+                      <span>apply.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Join for Free
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body container">
+                  <div class="container">
+                    <h3
+                      style="
+                        font-weight: 400;
+                        font-size: 35px;
+                        text-align: center;
+                      "
+                    >
+                      Sign up
+                    </h3>
+                    <div>
+                      <label style="font-weight: 700; font-size: 13px"
+                        >FULL NAME</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="Enter your name"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <div class="mt-3">
+                      <label style="font-weight: 700; font-size: 13px"
+                        >EMAIL</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="name@email.com"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <div class="mt-3">
+                      <label style="font-weight: 700; font-size: 13px"
+                        >PASSWORD</label
+                      ><br />
+                      <input
+                        type="text"
+                        placeholder="create your password"
+                        style="width: 90%; height: 50px"
+                      />
+                    </div>
+                    <span>Between 8 and 72 characters</span><br /><br />
+                    <div>
+                      <button
+                        style="
+                          background-color: rgb(0, 86, 210);
+                          color: white;
+                          font-weight: 400;
+                          border: none;
+                          border-radius: 5px;
+                          width: 90%;
+                          height: 50px;
+                        "
+                      >
+                        Join for Free
+                      </button>
+                    </div>
+                    <div style="display: flex; padding-top: 10px">
+                      <hr width="40%" />
+                      <span style="padding-left: 15px; padding-right: 15px"
+                        >or</span
+                      >
+                      <hr width="40%" />
+                    </div>
+                    <div class="mt-2">
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img src="../loe1.PNG" style="padding-right: 135px" />
+                        Continue with Google</button
+                      ><br /><br />
+                      <button
+                        style="
+                          width: 90%;
+                          height: 50px;
+                          border-radius: 3px;
+                          font-weight: 700;
+                          background-color: transparent;
+                          border: 1px solid black;
+                        "
+                      >
+                        <img
+                          src="../loe2.PNG"
+                          style="padding-right: 135px"
+                        />Continue with Facebook</button
+                      ><br /><br />
+                    </div>
+                    <div style="text-align: center">
+                      <span>New to Coursera?</span>
+                      <a href="#" style="text-decoration: none">Sign up</a>
+                    </div>
+                    <hr />
+                    <div style="text-align: center">
+                      <a href="#" style="text-decoration: none"
+                        >Log in with your organization</a
+                      >
+                    </div>
+                    <br />
+                    <div style="text-align: center; font-size: 12px">
+                      <span>I agree Coursera's</span>
+                      <a href="#" style="color: black">Terms of use </a>
+                      <span>and</span>
+                      <a href="#" style="color: black">Privacy Notice</a><br />
+                      <span>Having trouble logging in?</span>
+                      <a href="#" style="color: black">Learner help center</a>
+                    </div>
+                    <br />
+                    <div style="text-align: center; font-size: 12px">
+                      <span
+                        >This site is protected by reCAPTCHA Enterprise and <br />
+                        the Google</span
+                      >
+                      <a href="#" style="color: black">Privacy Policy.</a>
+                      <span>and</span>
+                      <a href="#" style="color: black">Terms and Service</a>
+                      <span>apply.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main><hr style="color: rgb(186, 181, 181);">
+
+      <main class="d-flex justify-content-between container">
+          <div>
+            <span style="font-size: 14px; color: #00419e;">Machine Learning</span>
+            <i class="fa fa-angle-right" style="font-size: 20px; padding-left: 10px;"></i>
+            <span style="font-size: 14px; color: #00419e; padding-left: 10px;">Week 1</span>
+            <i class="fa fa-angle-right" style="font-size: 20px; padding-left: 10px;"></i>
+            <span style="font-size: 14px; padding-left: 10px;">Welcome to Machine Learning</span>
+          </div>
+          <div>
+              <i class="fa fa-angle-left" style="color: #00419e; font-size: 20px; padding-right: 10px;"></i>
+              <span style="font-size: 14px; font-weight: 700; color: #00419e; padding-right: 10px;">Previous</span>
+              <span style="font-weight: 700; font-size: 14px; color: #00419e; padding-right: 10px;">Next</span>
+              <i class="fa fa-angle-right" style="color: #00419e; font-size: 20px;"></i>
+          </div>
+      </main><hr style="color: rgb(186, 181, 181);">
+      <nav>
+        <div class="container" >
+          <div class="row">
+            <div class="col-sm-3">
+                <h4 style="font-size: 14px; font-weight: 700;">Welcome</h4>
+                <div>
+                  <i class="fa fa-play-circle-o pr-1"></i>
+                    <span style="font-weight: 700; font-size: 12px;">Video:</span>
+                    <span style="font-size: 12px; font-weight: 400;">Welcome to <br> Machine Learning!</span><br>
+                    <span style="font-weight: 400; font-size: 12px;">1 min</span>
+                </div>
+                <div>
+                  <img src="../bbb.PNG" alt="">
+                  <span style="font-weight: 700; font-size: 12px;">Video:</span>
+                  <span style="font-size: 12px; font-weight: 400;">Machine <br> Learning Honor Code</span><br>
+                  <span style="font-weight: 400; font-size: 12px;">8 min</span>
+                </div>
+                <h4 style="font-size: 14px; font-weight: 700;">Introduction</h4>
+                <h4 style="font-size: 14px; font-weight: 700;">Review</h4>
+                <h4 style="font-size: 14px; font-weight: 700;">Model and cost Function</h4>
+                <h4 style="font-size: 14px; font-weight: 700;">Parameter Learning</h4>
+                <h4 style="font-size: 14px; font-weight: 700;">Review</h4>
+                <h4 style="font-size: 14px; font-weight: 700;">Linear Algebra Review</h4>
+                <h4 style="font-size: 14px; font-weight: 700;">Review</h4>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-1" style="border-left: 1px solid rgb(177, 175, 175); margin-top: -15px; box-shadow: 0px 0px 5px lightgray; width: 40px; height: 500px;"></div>
+                <div class="col-sm-10">
+                  <h3 style="font-size: 24px; font-weight: 400; color: #595757;">Welcome to Machine Learning!</h3>
+                  <video src="../index2.webm" style="width: 100%;" controls></video>
+                  <div class="container d-flex justify-content-between">
+                      <div>
+                        <button style="border: none; background-color: white;" id="save">Save Note</button>
+                        <button style="border: none;" id="save">Download</button>
+                      </div>
+                      <div>
+                        <span style="font-size: 14px; font-weight: 400; color: #0056d2; padding-right: 10px;">Share</span>
+                        <i class="fa fa-thumbs-o-up pr-2"></i>
+                        <i class="fa fa-thumbs-o-down pr-2"></i>
+                        <i class="fa fa-flag-o"></i>
+                      </div>
+                  </div> <hr>
+                  <div class="container d-flex justify-content-between">
+                      <select >
+                        <option value="">English</option>
+                        <option value="">Chinese</option>
+                        <option value="">Nigeria</option>
+                        <option value="">Ghana</option>
+                        <option value="">UAE</option>
+                        <option value="">Togo</option>
+                      </select>
+                      <div style="font-weight: 700; font-size: 14px; color: #2a73cc;" id="trans">Help us Translate</div>
+                  </div>
+                </div>
+                <div class="col-sm-1" style="border-left: 1px solid rgb(177, 175, 175); margin-top: -15px; box-shadow: 0px 0px 5px lightgray; width: 40px; height: 500px;"></div>
+
+              </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="d-flex justify-content-between">
+                    <div style="font-weight: 400; font-size: 22px; color: #373a3c;">Notes</div>
+                    <div style="font-size: 14px; font-weight: 400; color: #2a73cc;">All notes</div>
+                </div>
+                <div style="text-align: center; padding-top: 10px;">
+                  <img src="../pencil.PNG" alt="">
+                </div>
+                <span style="font-weight: 400; font-size: 16px; color: #666666;">
+                  Click the “Save Note” button below the 
+                  
+                </span>
+            </div>
+
+          </div>
+
+        </div>
+      </nav>
+    
+</body>
+</html>

@@ -1,0 +1,203 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+
+  <body class="m-5" style="text-align: center;color:white;background-color: blue;">
+    <div
+      class="card p-5 shadow w-75 bg-success"
+      id="tell"
+      style="margin-left: 150px,"
+    >
+      <h3>Welcome guys, do your best and success.</h3>
+      <p id="IDname"></p>
+      <div id="preID">
+        <input
+          type="text"
+          id="examinerID"
+          placeholder="Input your first name..."
+          required
+          value=""
+        />
+        <button id="star" onclick="start()" style="color:white;background-color: blue;width:100px;height:30px;">Start Quiz</button>
+        <p id="red" class="text-danger"></p>
+      </div>
+    </div>
+
+    <div id="all">
+      <h1 class="card-header">Quiz</h1>
+      <div id="saw"></div>
+
+      <div id="timee"></div>
+
+      <div class="card">
+        <h1 id="ees"></h1>
+
+        <div class="card-body" id="see"></div>
+      </div>
+
+      <div id="clos" class="mt-3">
+        <button class="btn btn-success" id="lest" onclick="less()">Prev</button>
+        <button class="btn btn-primary" id="most" onclick="more()">Next</button>
+      </div>
+      <div class="mt-2 d-grid gap-2">
+        <button class="btn btn-info btn-lg" id="submit" onclick="correct()"style="color:white;background-color:red;">
+          Submit
+        </button>
+      </div>
+      <button id="go" class="btn btn-primary" onclick="back()">Go Back</button>
+    </div>
+  </body>
+</html>
+<script>
+  //let call = document.getElementById("ees");
+
+  let questions = [
+    {
+      question: "How many days do we have in a week ?",
+      options: ["Five", "Seven", "Two", "Six"],
+      answer: "Seven",
+      chosen_ans: "",
+    },
+    {
+      question: "who developed the computer ?",
+      options: ["Makinde", "Charles Babbage", "Tzee", "Faith"],
+      answer: "charles Babbage",
+      chosen_ans: "",
+    },
+    {
+      question: "when was computer developed ?",
+      options: ["1883", "1990", "1983", "2021"],
+      answer: "1883",
+      chosen_ans: "",
+    },
+    
+  ];
+
+  all.hidden = true;
+  go.hidden = true;
+  let see = document.getElementById("see");
+  let index = 0;
+  let f = questions.length;
+  function display() {
+    see.innerHTML = `<p>${index + 1} of ${f} </p>`;
+    see.innerHTML += `<h4>${questions[index].question}</h4>`;
+    
+
+    questions[index].options.forEach(function (e, i) {
+      see.innerHTML += `<p><input type="radio" value='${e}' class="myans" name="aaa">${questions[index].options[i]}</p>`;
+      document.querySelectorAll(".myans").forEach(function (box) {
+        box.addEventListener("click", answer);
+        if (box.value == questions[index].chosen_ans) {
+          box.checked = true;
+        }
+      });
+    });
+  }
+
+  display();
+
+  let a;
+  function correct() {
+    timee.hidden = true;
+    IDname.hidden = true;
+    submit.hidden = true;
+    preID.hidden = false;
+    clos.hidden = true;
+    tell.hidden = true;
+    go.hidden = false;
+    let score = 0;
+    questions.forEach(function (el) {
+      if (el.answer == el.chosen_ans) {
+        score++;
+      }
+    });
+    
+    document.getElementById("see").innerHTML = `${a}, your score is ${
+      score + "/" + questions.length
+    }`;
+    
+  }
+
+  function start() {
+    let asd = examinerID.value;
+    if (asd != "") {
+      preID.hidden = true;
+      all.hidden = false;
+      clos.hidden = false;
+      a = examinerID.value;
+      IDname.innerHTML = `<h2>Welcome,${a}</h2>`;
+      see.innerHTML = "";
+      index = 0;
+      let count = 10;
+      let demo = setInterval(function () {
+        count--;
+        document.getElementById(
+          "timee"
+        ).innerHTML = `<p style="text-align:right;">You have ${count}s left </p>`;
+        if (count == 0) {
+          correct();
+
+          clearInterval(demo);
+        }
+      }, 3000);
+      display();
+    } else {
+      //all.hidden = true;
+      red.innerHTML = "Put your name";
+    }
+  }
+
+  function answer(ans) {
+    questions[index].chosen_ans = ans.target.value;
+    if (ans.value == ans.checked) {
+      most.disabled = false;
+    }
+    console.log(3);
+  }
+
+  // function more(){
+  //         index++
+
+  //     display()
+  // }
+  // function prev(){
+  //     index--
+  //     display()
+  // }
+  function more(params) {
+    if (questions[index + 1]) {
+      index++;
+
+      display();
+    }
+    // if (index.length - 1) {
+    //   most.disabled = true;
+    // }
+  }
+  function less() {
+    if (questions[index - 1]) {
+      index--;
+      display();
+    }
+
+    if (index <= 0) {
+      lest.disabled = true;
+    }
+  }
+  function back() {
+    tell.hidden = false;
+    go.hidden = true;
+    location.reload();
+  }
+</script>
