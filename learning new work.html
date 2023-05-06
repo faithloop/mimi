@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28/10/2021</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- <span>MEDISTORE</span> -->
+     <input type="number"id="a"/><br>
+    <input type="text" id="b"/><br>
+    <input type="number" id="c"/><br>
+    <button  onclick="prunt()"class="">check</button><br>
+    <textarea name=""id="result"col="30"row="10"></textarea>
+</body>
+</html>
+<script>
+let a=document.getElementById('a')
+let b=document.getElementById('b')
+let c=document.getElementById('c')
+let result=document.getElementById('result')
+
+function prunt() {
+    if(b.value==='+'){
+       result.innerHTML =Number(a.value) +Number(c.value);
+    }
+}
+</script>
